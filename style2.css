@@ -370,6 +370,14 @@ background-color: #ffffffc6 ;
 /* Start Media Query */
 
 @media(max-width: 799px) {
+
+  * {
+    font-family:'nino_mtavruli', "nino_mtavruli";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
   .omnichannel__overlay, .header__overlay {
     -webkit-backdrop-filter: blur(25px);
     backdrop-filter: blur(25px);
@@ -594,6 +602,14 @@ top: 10px;
 
 @media (max-width: 477px) {
 
+  * {
+    font-family:'nino_mtavruli', "nino_mtavruli";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 	.languagebox {
   
   margin-top: 5px;
@@ -727,6 +743,14 @@ top: 10px;
 }
 
 @media(max-width: 320px){
+
+  * {
+    font-family:'nino_mtavruli', "nino_mtavruli";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
   #closeNav {
     color: black;
 }
