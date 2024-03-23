@@ -27,7 +27,7 @@
 
 
 * {
-  font-family: "Poppins", sans-serif, 'nino_mtavruli', "nino_mtavruli";
+  font-family: "Poppins", "BPG Nino Mtavruli", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -235,7 +235,7 @@ html {
 
 
 h1.lowweight{
-    font-family: "Poppins", sans-serif, 'nino_mtavruli', "nino_mtavruli";
+    font-family: "Poppins",font-family: "BPG Nino Mtavruli", sans-serif;
     font-weight: 800;
 }
 
@@ -467,7 +467,7 @@ background-color: #ffffffc6 ;
   position: relative;
   border-bottom: 1px solid #0000004c;
   font-weight: 700;
-  font-family: 'nino_mtavruli';
+  font-family: "BPG Nino Mtavruli", sans-serif;
   text-transform: uppercase;
   padding: 15px 1px;
 }
@@ -677,7 +677,7 @@ top: 10px;
   color: inherit;
   position: relative;
   padding: 15px 1px;
-  font-family: 'nino_mtavruli';
+  font-family: "BPG Nino Mtavruli", sans-serif 'nino_mtavruli';
   font-weight: 700;
 
 }
