@@ -27,7 +27,7 @@
 
 
 * {
-  font-family: "Poppins", "BPG Nino Mtavruli", sans-serif;
+  font-family: "Poppins", sans-serif, "BPG Nino Mtavruli", 'nino_mtavruli';
   margin: 0;
   padding: 0;
   box-sizing: border-box;
