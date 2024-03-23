@@ -236,6 +236,7 @@ html {
   transition: 3s;
 }
 #hero .container h1{
+    font-family: nino_mtavruli , sans-serif;
     font-size:  45px;
     margin-left: 90px;
     font-weight: 100;
@@ -249,7 +250,7 @@ html {
 
 #hero h1 {
      
-      font-family: nino_mtavruli;
+      font-family: nino_mtavruli , sans-serif;
       display: block;
       width: fit-content;
       font-size: 4rem;
