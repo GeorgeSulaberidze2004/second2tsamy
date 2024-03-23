@@ -21,7 +21,22 @@
 
 @font-face {
   font-family: 'nino_mtavruli';
-  src: url(/assets/fonts/bpg_nino_mtavruli_bold.ttf) format("truetype");
+  src: url(/assets/fonts/bpg-nino-mtavruli-webfont.eot) format("truetype");
+  
+}
+@font-face {
+  font-family: 'nino_mtavruli';
+  src: url(/assets/fonts/bpg-nino-mtavruli-webfont.svg) format("truetype");
+  
+}
+@font-face {
+  font-family: 'nino_mtavruli';
+  src: url(/assets/fonts/bpg-nino-mtavruli-webfont.woff2) format("truetype");
+  
+}
+@font-face {
+  font-family: 'nino_mtavruli';
+  src: url(/assets/fonts/bpg-nino-mtavruli-webfont.ttf) format("truetype");
   
 }
 @font-face {
