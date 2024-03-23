@@ -248,8 +248,8 @@ html {
 }
 
 #hero h1 {
-      font-family: 'nino_mtavruli' "BPG Nino Mtavruli", sans-serif;
-      
+     
+      font-family: nino_mtavruli;
       display: block;
       width: fit-content;
       font-size: 4rem;
@@ -554,6 +554,7 @@ top: 10px;
   font-size: 60px;
   margin-left: 45px;
   font-weight: 100;
+ font-family: nino_mtavruli;
 }
 #hero .cta {
   display: table;
@@ -662,7 +663,7 @@ top: 10px;
 #hero .container h1 {
   font-size: 40px;
   margin-left: 15px;
-  
+  font-family: nino_mtavruli;
 }
 #hero .cta{
   margin-left: 15px;
@@ -761,6 +762,7 @@ top: 10px;
   font-size: 24px;
   margin-left: 14px;
   font-weight: 100;
+font-family: nino_mtavruli;
 }
 #hero .cta {
   margin-left: 14px;
