@@ -13,6 +13,11 @@
   src: url(/assets/fonts/Oswald-Bold.ttf) format("truetype");
   
 }
+@font-face {
+    font-family: 'nino_mtavruli';
+    src: url(/assets/fonts/bpg-nino-mtavruli-webfont.woff) format("truetype");
+    
+  }
 
 @font-face {
   font-family: 'nino_mtavruli';
