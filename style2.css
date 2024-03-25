@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 
 
+@import url('https://fonts.cdnfonts.com/css/bpg-nino-mtavruli');
+
 @font-face {
   font-family: "Poppins";
   src: url(/assets/fonts/Poppins-Light.ttf) format("truetype");
@@ -44,14 +46,8 @@
 }
 
 @font-face {
-  font-family: 'nino_mtavruli';
-  src: url(/assets/fonts/bpg_nino_mtavruli_normal.ttf) format("truetype");
-
-}
-
-@font-face {
   font-family: 'bpg_nino_mtavruli';
-  src: url(/assets/fonts/bpg_nino_mtavruli_bold.ttf) format("truetype");
+  src: url(/assets/fonts/bpg_nino_mtavruli_bold\ \(2\).ttf) format("truetype");
 
 }
 
@@ -59,12 +55,11 @@
 
 
 * {
-  font-family: 'bpg-nino-mtavruli', 'nino_mtavruli', "nino_mtavruli";
+  font-family: "Poppins", 'BPG Nino Mtavruli', sans-serif, 'nino_mtavruli';
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 
 html {
   overflow-x: hidden;
@@ -256,8 +251,7 @@ html {
 }
 
 #hero1 h1 {
-  font-family: 'nino_mtavruli' "BPG Nino Mtavruli", sans-serif;
-
+  font-family: 'BPG Nino Mtavruli', sans-serif;
   display: block;
   width: fit-content;
   font-size: 4rem;
@@ -270,7 +264,7 @@ html {
 
 
 h1.lowweight {
-  font-family: "Poppins", sans-serif, 'nino_mtavruli', "nino_mtavruli";
+  font-family: 'BPG Nino Mtavruli', sans-serif;
   font-weight: 800;
 }
 
@@ -340,6 +334,7 @@ h1.lowweight {
   margin-top: 5px;
   transition: .3s ease background-color;
   text-decoration: none;
+  font-family: 'BPG Nino Mtavruli', sans-serif;
 }
 
 #hero1 .cta:hover {
@@ -395,6 +390,7 @@ h1.lowweight {
 /* Start Media Query */
 
 @media(max-width: 799px) {
+  @import url('https://fonts.cdnfonts.com/css/bpg-nino-mtavruli');
 
   .omnichannel__overlay,
   .header__overlay {
@@ -531,6 +527,7 @@ h1.lowweight {
     font-family: 'nino_mtavruli';
     text-transform: uppercase;
     padding: 15px 1px;
+    font-family: 'BPG Nino Mtavruli', sans-serif;
   }
 
   #sidebarlogos {
@@ -592,6 +589,7 @@ h1.lowweight {
     font-size: 60px;
     margin-left: 45px;
     font-weight: 100;
+    font-family: 'BPG Nino Mtavruli', sans-serif;
   }
 
   #hero1 .cta {
@@ -600,6 +598,8 @@ h1.lowweight {
     padding: 13px 44px;
     font-weight: 200;
     margin-top: 14px;
+    font-family: 'BPG Nino Mtavruli', sans-serif;
+    font-weight: 100;
   }
 
   .backdrop {
@@ -642,7 +642,7 @@ h1.lowweight {
 }
 
 @media (max-width: 477px) {
-
+  @import url('https://fonts.cdnfonts.com/css/bpg-nino-mtavruli');
   .languagebox {
 
     margin-top: 5px;
@@ -674,6 +674,7 @@ h1.lowweight {
   }
 
   .nav-container {
+    font-family: 'BPG Nino Mtavruli', sans-serif;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -710,7 +711,7 @@ h1.lowweight {
   #hero1 .container1 h1 {
     font-size: 40px;
     margin-left: 15px;
-
+    font-family: 'BPG Nino Mtavruli', sans-serif;
   }
 
   #hero1 .cta {
@@ -719,6 +720,7 @@ h1.lowweight {
     letter-spacing: .2rem;
     transition: .3s ease background-color;
     text-decoration: none;
+    font-family: 'BPG Nino Mtavruli', sans-serif;
   }
 }
 
@@ -759,8 +761,8 @@ h1.lowweight {
   color: inherit;
   position: relative;
   padding: 15px 1px;
-  font-family: 'nino_mtavruli';
-  font-weight: 700;
+  font-family: 'BPG Nino Mtavruli', sans-serif;
+  font-weight: 100;
 
 }
 
@@ -792,6 +794,9 @@ h1.lowweight {
 }
 
 @media(max-width: 320px) {
+
+  @import url('https://fonts.cdnfonts.com/css/bpg-nino-mtavruli');
+
   #closeNav {
     color: black;
   }
@@ -824,11 +829,13 @@ h1.lowweight {
     font-size: 24px;
     margin-left: 14px;
     font-weight: 100;
+    font-family: 'BPG Nino Mtavruli', sans-serif;
   }
 
   #hero1 .cta {
     margin-left: 14px;
     font-size: 9px;
+    font-family: 'BPG Nino Mtavruli', sans-serif;
   }
 
   .page-footer p,
@@ -844,6 +851,8 @@ h1.lowweight {
   .sidebarpages2 {
     font-size: 13px;
     margin: 10px 0;
+    font-family: 'BPG Nino Mtavruli', sans-serif;
+    font-weight: 100;
   }
 
   .sidebarpages2 #chevron2 {
