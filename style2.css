@@ -49,15 +49,22 @@
 
 }
 
+@font-face {
+  font-family: 'bpg_nino_mtavruli';
+  src: url(/assets/fonts/bpg_nino_mtavruli_bold.ttf) format("truetype");
+
+}
+
 
 
 
 * {
-  font-family: 'nino_mtavruli', "nino_mtavruli";
+  font-family: 'bpg-nino-mtavruli', 'nino_mtavruli', "nino_mtavruli";
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 
 html {
   overflow-x: hidden;
