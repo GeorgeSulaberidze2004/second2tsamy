@@ -619,7 +619,7 @@ h1.lowweight {
   }
 
   .languagebox i {
-
+    font-family: "Poppins", sans-serif, 'nino_mtavruli', "nino_mtavruli";
     position: absolute;
     top: 53%;
     left: 5px;
@@ -628,6 +628,7 @@ h1.lowweight {
   }
 
   .language {
+    font-family: "Poppins", sans-serif, 'nino_mtavruli', "nino_mtavruli";
     width: 60px;
     color: black;
     font-weight: 500;
