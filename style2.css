@@ -15,42 +15,6 @@
 
 }
 
-@font-face {
-  font-family: 'nino_mtavruli';
-  src: url(/assets/fonts/bpg-nino-mtavruli-webfont.woff) format("truetype");
-
-}
-
-@font-face {
-  font-family: 'nino_mtavruli';
-  src: url(/assets/fonts/bpg-nino-mtavruli-webfont.eot) format("truetype");
-
-}
-
-@font-face {
-  font-family: 'nino_mtavruli';
-  src: url(/assets/fonts/bpg-nino-mtavruli-webfont.svg) format("truetype");
-
-}
-
-@font-face {
-  font-family: 'nino_mtavruli';
-  src: url(/assets/fonts/bpg-nino-mtavruli-webfont.woff2) format("truetype");
-
-}
-
-@font-face {
-  font-family: 'nino_mtavruli';
-  src: url(/assets/fonts/bpg-nino-mtavruli-webfont.ttf) format("truetype");
-
-}
-
-@font-face {
-  font-family: 'bpg_nino_mtavruli';
-  src: url(/assets/fonts/bpg_nino_mtavruli_bold\ \(2\).ttf) format("truetype");
-
-}
-
 
 
 
@@ -610,7 +574,7 @@ h1.lowweight {
   }
 
   .languagebox {
-
+    font-family: "Poppins", sans-serif, 'nino_mtavruli', "nino_mtavruli";
     margin-top: 5px;
     font-size: 16px;
     position: relative;
@@ -645,7 +609,7 @@ h1.lowweight {
 @media (max-width: 477px) {
   @import url('https://fonts.cdnfonts.com/css/bpg-nino-mtavruli');
   .languagebox {
-
+    font-family: "Poppins", sans-serif, 'nino_mtavruli', "nino_mtavruli";
     margin-top: 5px;
     font-size: 16px;
     position: relative;
@@ -654,7 +618,7 @@ h1.lowweight {
   }
 
   .languagebox i {
-
+    font-family: "Poppins", sans-serif, 'nino_mtavruli', "nino_mtavruli";
     position: absolute;
     top: 53%;
     left: 5px;
@@ -663,6 +627,7 @@ h1.lowweight {
   }
 
   .language {
+    font-family: "Poppins", sans-serif, 'nino_mtavruli', "nino_mtavruli";
     width: 50px;
     color: black;
     font-weight: 500;
