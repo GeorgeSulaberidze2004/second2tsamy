@@ -711,8 +711,8 @@ h1.lowweight {
 }
 
 .page-footer .buttons button {
-  font-size: 13px;
-  padding: 7px 67px;
+  font-size: 12px;
+  padding: 7px 40px;
 }
 
 .page-footer .buttons {
@@ -800,14 +800,11 @@ h1.lowweight {
     font-size: 19px;
   }
 
-  .page-footer .buttons button:last-child {
-    background-color: transparent;
-    padding: 4px 49px;
-  }
+ 
 
   .page-footer .buttons button {
     font-size: 9px;
-    padding: 6px 50px;
+    padding: 6px 30px;
 
   }
 
