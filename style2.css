@@ -684,7 +684,8 @@ h1.lowweight {
   #hero1 .container1 h1 {
     font-size: 40px;
     margin-left: 15px;
-    font-family: 'BPG Nino Mtavruli', sans-serif;
+    font-family: 'BPG Nino Mtavruli','-apple-system', sans-serif, 'nino_mtavruli';
+
   }
 
   #hero1 .cta {
