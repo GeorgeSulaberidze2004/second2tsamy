@@ -38,7 +38,7 @@
 }
 
 li, ul, p, a, span, label, h1, h2, h3, h4, h5 {
-  font-family:'BPG Nino Mtavruli', '-apple-system', sans-serif, 'nino_mtavruli';
+  font-family:'Poppins', '-apple-system', sans-serif, 'nino_mtavruli';
   margin: 0;
   padding: 0;
 }
@@ -72,7 +72,7 @@ html {
 .nav-container ul li {
   cursor: pointer;
   transition: 0.5s;
-  padding: 3px 10px;
+  padding: 5px 10px;
   border-radius: 5px;
   font-weight: 500;
 }
@@ -150,7 +150,8 @@ html {
 }
 
 .page-info h1 {
-  font-weight: 100;
+  font-weight: 300;
+  font-family: 'Poppins';
 }
 
 .page-info h3 {
@@ -188,7 +189,7 @@ html {
 
 .page-footer .buttons button:last-child {
   background-color: rgba(255, 255, 255, 0.75);
-
+  color: black;
 }
 
 .page-footer .buttons.inverted button:first-child {
