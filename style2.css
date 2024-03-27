@@ -26,7 +26,7 @@
 }
 
 li, ul, p, a, span, label, h1, h2, h3, h4, h5 {
-  font-family:'BPG Nino Mtavruli', -apple-system, sans-serif, 'nino_mtavruli';
+  font-family:'BPG Nino Mtavruli', '-apple-system', sans-serif, 'nino_mtavruli';
   margin: 0;
   padding: 0;
 }
