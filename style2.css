@@ -519,10 +519,7 @@ h1.lowweight {
 
   }
 
-  .page-footer .buttons button {
-    font-size: 13px;
-    padding: 7px 75px;
-  }
+ 
 
   .sidebarpages #chevron {
     height: 20px;
@@ -712,7 +709,7 @@ h1.lowweight {
 
 .page-footer .buttons button {
   font-size: 12px;
-  padding: 7px 37px;
+  padding: 7px 40px;
 }
 
 .page-footer .buttons {
