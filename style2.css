@@ -1,7 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 
 
-@import url('https://fonts.cdnfonts.com/css/bpg-nino-mtavruli');
+
+
+@font-face{font-family:'BPG Nino Mtavruli';src:url(assets/fonts/bpg-nino-mtavruli-webfont.eot);src:url(assets/fonts/bpg-nino-mtavruli-webfont.eot?#iefix) format('embedded-opentype'),url(assets/fonts/bpg-nino-mtavruli-webfont.woff2) format('woff2'),url(assets/fonts/bpg-nino-mtavruli-webfont.woff) format('woff'),url(assets/fonts/bpg-nino-mtavruli-webfont.ttf) format('truetype'),url(assets/fonts/bpg-nino-mtavruli-webfont.svg#bpg_nino_mtavruliregular) format('svg')}
+@font-face {
+  font-family: 'BPG Nino Mtavruli Bold';
+  src: url('assets/fonts/bpg-nino-mtavruli-bold-webfont.eot'); /* IE9 Compat Modes */
+  src: url('assets/fonts/bpg-nino-mtavruli-bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('assets/fonts/bpg-nino-mtavruli-bold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('assets/fonts/bpg-nino-mtavruli-bold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('assets/fonts/bpg-nino-mtavruli-bold-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('assets/fonts/bpg-nino-mtavruli-bold-webfont.svg#bpg_nino_mtavrulibold') format('svg'); /* Legacy iOS */
+}
 
 @font-face {
   font-family: "Poppins";
@@ -20,7 +31,7 @@
 
 
 * {
-  font-family: 'BPG Nino Mtavruli', '-apple-system', sans-serif, 'nino_mtavruli';
+  font-family: 'BPG Nino Mtavruli', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
