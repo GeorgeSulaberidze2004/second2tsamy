@@ -156,6 +156,19 @@ html {
   gap: 20px;
   justify-content: center;
 }
+button.lanbut {
+  font-family: "Poppins", sans-serif, 'nino_mtavruli', "nino_mtavruli";
+  height: 25px;
+  width: 25px;
+  text-align: -webkit-center;
+  margin-top: 3px;
+  margin-right: 0px;
+  font-size: 12px;
+  border-color: #fff;
+  border-radius: 20px;
+  background-color: transparent;
+  color: #fff;
+}
 
 .page-footer .buttons button {
   font-size: 13px;
@@ -338,6 +351,11 @@ background-color: #ffffffc6 ;
 /* Start Media Query */
 
 @media(max-width: 799px) {
+   button.lanbut{
+	   display:none
+   }
+
+	
   .omnichannel__overlay, .header__overlay {
     -webkit-backdrop-filter: blur(25px);
     backdrop-filter: blur(25px);
