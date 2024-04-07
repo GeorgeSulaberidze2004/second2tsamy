@@ -158,6 +158,19 @@ html {
 .page-info h3 {
   font-weight: 500;
 }
+button.lanbut {
+  font-family: "Poppins", sans-serif, 'nino_mtavruli', "nino_mtavruli";
+  height: 25px;
+  width: 25px;
+  text-align: -webkit-center;
+  margin-top: 3px;
+  margin-right: 0px;
+  font-size: 12px;
+  border-color: #fff;
+  border-radius: 20px;
+  background-color: transparent;
+  color: #fff;
+}
 
 .page-info.model-x {
   color: #ffffffa4;
@@ -375,7 +388,12 @@ h1.lowweight {
 
 @media(max-width: 799px) {
   @import url('https://fonts.cdnfonts.com/css/bpg-nino-mtavruli');
+   
 
+   button.lanbut{
+     display:none
+   }
+  
   .omnichannel__overlay,
   .header__overlay {
     -webkit-backdrop-filter: blur(25px);
