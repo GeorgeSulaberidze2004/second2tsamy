@@ -65,7 +65,7 @@
 
     <ul class="pages">
       <li>
-        <video src="images/Model-Y.mp4" muted autoplay loop playsinline ></video>
+        <img src="images/main1.jpeg" alt="Model 3" />
         <section id="hero">
             <div class="hero container">
                <div>
@@ -75,6 +75,8 @@
                    <a class="cta" onclick="scrollToNextPage()" href="#"  type="button1"  >CHECK OUT </a>
                </div>
             </div>    
+
+            
             
            
            
@@ -91,36 +93,213 @@
             <button>See Details</button>
           </div>
           <p>
-            *Excludes taxes and fees with price subject to change.Available in select states.
-            <a href="#">See Details</a>
+            *For additional information, write to us on our social network.<br />
+            <a href="#">Go to the link</a>
+          </p>
+        </div>
+
+        
+      </li>
+      
+      <li>
+        <img src="images/image00017.jpeg" alt="Model S" />   
+        <div class="page-info model-x">
+          <h1>T Shade</h1>
+          <h3>Titanium</h3>
+          <p> </p>
+        </div>
+        <div class="page-footer">
+          <div class="buttons inverted">
+            <button>Order Now</button>
+            <button>See Details</button>
+          </div>
+          <p>
+            *For additional information, write to us on our social network.<br />
+            <a href="#">Go to the link</a>
           </p>
         </div>
       </li>
 
       <li>
-        <img src="images/Model-3.JPG" alt="Model 3" />
+        <img src="images/image00016.jpeg" alt="Model 3" />
         <div class="page-info">
-          <h1>Temptation</h1>
+          <h1>Sunstop</h1>
           <p>Lease starting at $299</p>
         </div>
         <div class="page-footer">
           <div class="buttons inverted">
             <button>Order Now</button>
-            <button>See Details</button>
+            <button  id="load-more" >See Details</button>
           </div>
           <p>
-            *Excludes taxes and fees with price subject to change.Available in select states.
-            <a href="#">See Details</a>
+            *For additional information, write to us on our social network.<br />
+            <a href="#">Go to the link</a>
           </p>
         </div>
+        <script>
+
+          let loadMoreBtn = document.querySelector('#load-more');
+          
+          
+          loadMoreBtn.onclick = () =>{
+             let boxes = [...document.querySelectorAll('.details-section .myslide fade ')];
+             for (var i = currentItem; i < currentItem + 3; i++){
+                boxes[i].style.display = 'inline-block';
+             }
+             currentItem += 3;
+          
+             if(currentItem >= boxes.length){
+                loadMoreBtn.style.display = 'none';
+             }
+          }
+          
+          </script>
+      </li>
+      
+      <li id="det1" class="details-section">
+        
+        <div class="myslide fade">
+          <div class="txt">
+            <h1>Sunstop</h1>
+            <p>Limited<br>Quantity<br>1 OF 100</p>
+          </div>
+          <img class="detailes1" src="images/image00001.jpeg" style="width: 100%; height: 100%;">
+        </div>
+    
+        <div class="myslide fade">
+          <div class="txt">
+            <h1>Sunstop</h1>
+            <p>Limited<br>Quantity<br>1 OF 100</p>
+          </div>
+          <img class="detailes1" src="images/image00009.jpeg" style="width: 100%; height: 100%;">
+        </div>
+    
+        <div class="myslide fade">
+          <div class="txt">
+            <h1>Sunstop</h1>
+            <p>Limited<br>Quantity<br>1 OF 100</p>
+          </div>
+          <img class="detailes1" src="images/image0000114.jpeg" style="width: 100%; height: 100%;">
+        </div>
+    
+        <div class="myslide fade">
+          <div class="txt">
+            <h1>Eyebeam</h1>
+            <p>Limited<br>Quantity<br>1 OF 100</p>
+          </div>
+          <img class="detailes1" src="images//image00008.jpeg" style="width: 100%; height: 100%;">
+          
+        </div>
+    
+        <div class="myslide fade">
+          <div class="txt">
+            <h1>Eyebeam</h1>
+            <p>Limited<br>Quantity<br>1 OF 100</p>
+          </div>
+          <img class="detailes1" src="images//image00012.jpeg" style="width: 100%; height: 100%;">
+        </div>
+    
+        <div class="myslide fade">
+          <div class="txt">
+            <h1>Eyebeam</h1>
+            <p>Limited<br>Quantity<br>1 OF 100</p>
+          </div>
+          <img class="detailes1" src="images//image00005.jpeg" style="width: 100%; height: 100%;">
+        </div>
+    
+        <div class="myslide fade">
+          <div class="txt">
+            <h1>SolFlare</h1>
+            <p>Limited<br>Quantity<br>1 OF 100</p>
+          </div>
+          <img class="detailes1" src="images/image00006.jpeg" style="width: 100%; height: 100%;">
+        </div>
+    
+        <div class="myslide fade">
+          <div class="txt">
+            <h1>SolFlare</h1>
+            <p>Limited<br>Quantity<br>1 OF 100</p>
+          </div>
+          <img class="detailes1" src="images/image00007.jpeg" style="width: 100%; height: 100%;">
+        </div>
+    
+        <div class="myslide fade">
+          <div class="txt">
+            <h1>SolFlare</h1>
+            <p>Limited<br>Quantity<br>1 OF 100</p>
+          </div>
+          <img class="detailes1" src="images/image00013.jpeg" style="width: 100%; height: 100%;">
+        </div>
+    
+      
+
+          
+        </div>
+          
+        <!-- onclick js -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        <div class="dotsbox" style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+          <span class="dot" onclick="currentSlide(8)"></span>
+          <span class="dot" onclick="currentSlide(9)"></span>
+          
+        </div>
+       
+      
       </li>
 
       <li>
-        <img src="images/Model-X.JPG" alt="Model X" />
+        <img id="first" src="images/image00003.jpeg" alt="Model S" />
         <div class="page-info model-x">
-          <h1>Requiem</h1>
-          <h3>From $299</h3>
-          <p>Check out out new product!
+          <h1>Ray Frame</h1>
+          <h3>Titanium</h3>
+          <p></p>
+        </div>
+        <div class="page-footer">
+          <div class="buttons inverted">
+            <button>Order Now</button>
+            <button>See Details</button>
+          </div>
+          <p>
+            *For additional information, write to us on our social network.<br />
+            <a href="#">Go to the link</a>
+          </p>
+        </div>
+      </li>
+      
+      <li>
+        <img src="images/image00011.jpeg" alt="Model X" />
+        <div class="page-info model-x">
+          <h1>Ray Frame</h1>
+          <h3>Titanium</h3>
+          <p> </p>
+        </div>
+        <div class="page-footer">
+          <div class="buttons inverted">
+            <button>Order Now</button>
+            <button>See Details</button>
+          </div>
+          <p>
+            *For additional information, write to us on our social network.<br />
+            <a href="#">Go to the link</a>
+          </p>
+        </div>
+      </li>
+      
+      <li>
+        <img id="first" src="images/image00014.jpeg" alt="Model S" />
+        <div class="page-info model-x">
+          <h1>Ray Frame</h1>
+          <h3>Titanium</h3>
+          <p>
           </p>
         </div>
         <div class="page-footer">
@@ -129,33 +308,15 @@
             <button>See Details</button>
           </div>
           <p>
-            *Price before incentives and savings is $79,990, excluding taxes and fees. Subject to change<br />
-            <a href="#">Learn about est. gas savings.</a>
+            *For additional information, write to us on our social network.<br />
+            <a href="#">Go to the link</a>
           </p>
         </div>
       </li>
+      
 
       <li>
-        <img src="images/Model-S.JPG" alt="Model S" />
-        <div class="page-info model-x">
-          <h1></h1>
-          <h3></h3>
-          <p>Black </p>
-        </div>
-        <div class="page-footer">
-          <div class="buttons inverted">
-            <button>Order Now</button>
-            <button>See Details</button>
-          </div>
-          <p>
-            *Price before incentives and savings is $74,990, excluding taxes and fees. Subject to change<br />
-            <a href="#">Learn about est. gas savings.</a>
-          </p>
-        </div>
-      </li>
-
-      <li>
-        <video src="images/Experience-Tesla.mp4" muted autoplay loop playsinline></video>
+        <img src="images/image00015.jpeg" alt="Model 3" />
         <div class="page-info">
           <h1>Vision Like </h1>
           <p>T S A M Y</p>
