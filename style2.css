@@ -97,6 +97,119 @@ html {
   filter: brightness(0) invert(1);
 }
 
+.prev, .next{
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	font-size: 50px;
+	padding: 15px;
+	cursor: pointer;
+	color: #fff;
+	transition: 0.1s;
+	user-select: none;
+}
+.prev:hover, .next:hover{
+	color: #dedede; /* blue */
+}
+.next{
+	right: 0;
+}
+.dotsbox{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	bottom: 20px;
+	cursor: pointer;
+}
+
+.dot{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border: 3px solid #fff;
+	border-radius: 50%;
+	margin: 0 10px;
+	cursor: pointer;
+}
+
+/* javascript */
+.active, .dot:hover{
+	border-color: #1a1919ad; /* blue */
+}
+/* /javascript */
+
+/* muslide add fade */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 0.8}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0.8}
+  to {opacity: 1}
+}
+/* /muslide add fade */
+.txt{
+	position: absolute;
+	color: #fff;
+	letter-spacing: 2px;
+	line-height: 35px;
+	top: 40%;
+	left: 15%;
+	-webkit-animation-name: posi;
+  	-webkit-animation-duration: 2s;
+  	animation-name: posi;
+  	animation-duration: 2s;
+	z-index: 1;
+}
+
+@-webkit-keyframes posi {
+  from {left: 25%;}
+  to {left: 15%;}
+}
+
+
+@keyframes posi {
+  from {left: 25%;}
+  to {left: 15%;}
+}
+
+.txt h1{
+	color: #ffffff45; 
+	font-size: 50px;
+	margin-bottom: 20px;
+  font-family: Oswald;
+}
+.txt p{
+  font-family: 'BPG Nino Mtavruli', '-apple-system', sans-serif, 'nino_mtavruli';
+  font-weight: lighter;
+
+	font-size: 20px;
+}
+/* /3 */
+@-webkit-keyframes zoomin {
+  from {transform: scale(1, 1);}
+  to {transform: scale(1.5, 1.5);}
+}
+
+  @keyframes zoomin {
+    from {transform: scale(1, 1);}
+    to {transform: scale(1.5, 1.5);}
+  }
+
+  .details-section {
+    display: none; /* Initially hide the details section */
+    
+}
+
+
 .nav-container .icons {
   display: flex;
   font-size: 25px;
@@ -108,6 +221,14 @@ html {
   border-radius: 50%;
   padding: 3px;
   transition: 0.5s;
+}
+
+.dropdown__menu{
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: var(--color-black);
 }
 
 
@@ -149,15 +270,6 @@ html {
   letter-spacing: 1px;
   font-size: 40px;
 }
-
-.page-info h1 {
-  font-weight: 300;
-  font-family: 'Poppins';
-}
-
-.page-info h3 {
-  font-weight: 500;
-}
 button.lanbut {
   font-family: "Poppins", sans-serif, 'nino_mtavruli', "nino_mtavruli";
   height: 25px;
@@ -170,6 +282,16 @@ button.lanbut {
   border-radius: 20px;
   background-color: transparent;
   color: #fff;
+}
+
+.page-info h1 {
+  font-weight: 300;
+  font-family: 'Oswald', '-apple-system', sans-serif, 'nino_mtavruli';
+  color: #ffffff80;
+}
+
+.page-info h3 {
+  font-weight: 500;
 }
 
 .page-info.model-x {
@@ -387,13 +509,18 @@ h1.lowweight {
 /* Start Media Query */
 
 @media(max-width: 799px) {
-  @import url('https://fonts.cdnfonts.com/css/bpg-nino-mtavruli');
-   
 
-   button.lanbut{
-     display:none
-   }
-  
+  button.lanbut{
+    display: none;
+  }
+
+  #langs{
+    display: none;
+  }
+
+
+  @import url('https://fonts.cdnfonts.com/css/bpg-nino-mtavruli');
+
   .omnichannel__overlay,
   .header__overlay {
     -webkit-backdrop-filter: blur(25px);
@@ -437,6 +564,43 @@ h1.lowweight {
     height: 100%;
 
   }
+  .txt{
+    top: 20%;
+    left: 15%;
+    line-height: 25px;
+  }
+  .txt h1{
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-family: Oswald;
+  }
+  .txt p {
+    font-weight: lighter;
+    font-size: 14px;
+  }
+  .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #ffffffbf;
+    border-radius: 50%;
+    margin: 0 4px;
+    cursor: pointer;
+}
+.active, .dot:hover {
+  border-color: #4c4c4cad;
+}
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 50px;
+  padding: 15px;
+  cursor: pointer;
+  color: #ffffff85;
+  transition: 0.1s;
+  user-select: none;
+}
 
   .pages li {
     position: relative;
@@ -795,6 +959,8 @@ h1.lowweight {
   color: black;
 }
 
+
+
 @media(max-width: 320px) {
 
   @import url('https://fonts.cdnfonts.com/css/bpg-nino-mtavruli');
@@ -866,6 +1032,42 @@ h1.lowweight {
   .bx-exit::before {
     font-size: 25px;
   }
+  .txt{
+    top: 20%;
+    left: 15%;
+  }
+  .txt h1{
+    font-size: 35px;
+    margin-bottom: 10px;
+    font-family: Oswald;
+  }
+  .txt p {
+    font-weight: lighter;
+    font-size: 14px;
+  }
+  .dot {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border: 2px solid #ffffffbf;
+    border-radius: 50%;
+    margin: 0 2px;
+    cursor: pointer;
+}
+.active, .dot:hover {
+  border-color: #4c4c4cad;
+}
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 30px;
+  padding: 15px;
+  cursor: pointer;
+  color: #ffffff85;
+  transition: 0.1s;
+  user-select: none;
+}
 
   .sidebar {
     position: fixed;
