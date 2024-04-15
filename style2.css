@@ -46,6 +46,7 @@ li, ul, p, a, span, label, h1, h2, h3, h4, h5 {
 html {
   overflow-x: hidden;
   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 .nav-container {
