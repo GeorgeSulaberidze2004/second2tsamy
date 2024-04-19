@@ -1152,6 +1152,7 @@ h1.lowweight {
     top: 50px;
     color: #888;
     font-size: 14px;
+     text-decoration: none;
   }
   section.left .contactTitle h2 {
     position: relative;
