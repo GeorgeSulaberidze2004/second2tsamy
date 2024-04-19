@@ -49,23 +49,6 @@ document.getElementById("closeNav").addEventListener("click", function() {
 
 
 
-document.addEventListener('DOMContentLoaded', function () {
-// Function to smoothly scroll to the next page
-function smoothScrollToNextPage() {
-    const nextSection = document.getElementById('model-y-info');
-    // Using modern smooth scroll behavior
-    nextSection.scrollIntoView({ behavior: 'smooth' });
-}
-
-// Listening for clicks on the "CHECK OUT" link
-const checkOutLink = document.querySelector('.cta');
-checkOutLink.addEventListener('click', function (event) {
-    // Preventing default link behavior
-    event.preventDefault();
-    // Scroll to the next page smoothly
-    smoothScrollToNextPage();
-});
-});
 
 
 
