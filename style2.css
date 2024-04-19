@@ -1378,6 +1378,7 @@ h1.lowweight {
   top: 50px;
   color: #888;
   font-size: 15px;
+	text-decoration: none;
 }
 .iconGroup .icon {
   width: 25px;
