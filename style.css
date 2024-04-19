@@ -1066,6 +1066,7 @@ section.left .socialMedia {
     top: 50px;
     color: #888;
     font-size: 13px;
+    text-decoration: none;
 }
 section.left .contactTitle h2 {
   position: relative;
@@ -1112,7 +1113,7 @@ section.left .contactTitle p {
 }
 .messageForm textarea {
   resize: none;
-  height: 190px;
+  height: 130px;
   display: block;
 }
 section.left .socialMedia {
