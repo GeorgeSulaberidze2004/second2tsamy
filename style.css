@@ -687,6 +687,10 @@ background-color: #ffffffc6 ;
 	   display:none
    }
 
+	.active, .dot:hover {
+    border-color: #4c4c4cad;
+}
+
 	
   .omnichannel__overlay, .header__overlay {
     -webkit-backdrop-filter: blur(25px);
