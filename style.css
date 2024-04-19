@@ -1069,11 +1069,12 @@ section.left .socialMedia {
     text-decoration: none;
 }
 section.left .contactTitle h2 {
-  position: relative;
-  font-size: 20px;
-  color: #ddd;
-  display: inline-block;
-  margin-bottom: 35px;
+    position: relative;
+    font-size: 14px;
+    top: 15px;
+    color: #ddd;
+    display: inline-block;
+    margin-bottom: 35px;
 }
 section.left .contactTitle h2 {
     position: relative;
@@ -1113,7 +1114,7 @@ section.left .contactTitle p {
 }
 .messageForm textarea {
   resize: none;
-  height: 130px;
+  height: 120px;
   display: block;
 }
 section.left .socialMedia {
