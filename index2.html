@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style2.css" />
     <link rel="stylesheet" href="/bower_components/bpg-nino-mtavruli/css/bpg-nino-mtavruli.css">
     <link href="https://fonts.cdnfonts.com/css/bpg-nino-mtavruli" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <title>TSAMY</title>
   </head>
@@ -24,9 +25,9 @@
       
       
       <ul class="gefont">
-        <li href="#det1" >პროდუქცია</li>
+        <li  onclick="window.location.href='#det1'" >პროდუქცია</li>
         <li>ჩვენს შესახებ</li>
-        <li>კონტაქტი</li>
+        <li  onclick="window.location.href='#contact1id'">კონტაქტი</li>
         
       </ul> 
       <div class="icons">
@@ -47,9 +48,9 @@
    <aside class="sidebar">
       <button  class="closenav"><i id="closeNav" class='bx bx-exit bx-rotate-180'></i></button>
       <style> .sidebarpages2{font-weight: 500;} </style>
-      <a class="sidebarpages2" href="#det1">პროდუქცია <img id="chevron2" src="images/ARROW.png"  alt=""> </a>
+      <a class="sidebarpages2" onclick="window.location.href='#det1'">პროდუქცია <img id="chevron2" src="images/ARROW.png"  alt=""> </a>
       <a class="sidebarpages2" href="About">ჩვენს შესახებ <img id="chevron2" src="images/ARROW.png"  alt=""> </a>
-      <a class="sidebarpages2" href="Contact">კონტაქტი <img id="chevron2" src="images/ARROW.png"  alt=""></a>
+      <a class="sidebarpages2"onclick="window.location.href='#contact1id'">კონტაქტი <img id="chevron2" src="images/ARROW.png"  alt=""></a>
      
       <div class="languagebox">
         <i class='bx bx-globe'></i>
@@ -74,7 +75,7 @@
                    <h1 class="lowweight" >გახდი <span></span></h1>
                    <h1 class="lowweight" >ყველასგან <span></span></h1>
                    <h1>განსხვავებული <span></span></h1>
-                   <a class="cta" onclick="scrollToNextPage()" href="#"  type="button1"  >შეამოწმე</a>
+                   <a class="cta" onclick="scrollToNextPage()"  onclick="window.location.href='Model 3'"  type="button1"  >შეამოწმე</a>
                </div>
             </div>    
             
@@ -99,7 +100,7 @@
         </div>
       </li>
       <li>
-        <img src="images/image00017.jpeg" alt="Model 3" />
+        <img id="Model 3" src="images/image00017.jpeg" alt="Model 3" />
         <div class="page-info">
           <h1>T Shade</h1>
           <p>Titanium</p>
@@ -308,6 +309,120 @@
           </div>
         </div>
       </li>
+      <li id="contact1id">
+
+        <div class="contact1">
+          <main class="row">
+            
+            <!--  *******   Left Section (Column) Starts   *******  -->
+      
+            <section class="col left">
+              
+              <!--  *******   Title Starts   *******  -->
+      
+              <div class="contactTitle">
+                <h2>კონტაქტი</h2>
+                
+              </div>
+      
+              <!--  *******   Title Ends   *******  -->
+      
+              <!--  *******   Contact Info Starts   *******  -->
+      
+              <div class="contactInfo">
+                
+                <div class="iconGroup">
+                  <div class="icon">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <div class="details">
+                    <span>ტელეფონი</span>
+                    <span>+995 593 553 600</span>
+                  </div>
+                </div>
+      
+                <div class="iconGroup">
+                  <div class="icon">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div class="details">
+                    <span>მეილი</span>
+                    <span>tsamygeorgia@gmail.com</span>
+                  </div>
+                </div>
+      
+                <div class="iconGroup">
+                  <div class="icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div class="details">
+                    <span>მისამართი</span>
+                    <span> Tbilisi, Georgia</span>
+                  </div>
+                </div>
+      
+              </div>
+      
+              <!--  *******   Contact Info Ends   *******  -->
+      
+              <!--  *******   Social Media Starts   *******  -->
+      
+              <div class="socialMedia">
+                <a onclick="window.location.href='//www.facebook.com/profile.php?id=61557992736442'"><i class="fa-brands fa-facebook-f"></i></a>
+                <a onclick="window.location.href='//www.instagram.com/tsamy.georgia?igsh=MWlyazl3aXdydXNjbQ%3D%3D&utm_source=qr'"><i class="fa-brands fa-instagram"></i></a>
+                <a onclick="window.location.href='//www.tiktok.com/@tsamy.georgia?_t=8lISYh7nggr&_r=1 '"><i class="fa-brands fa-tiktok"></i></a>
+              </div>
+      
+              <!--  *******   Social Media Ends   *******  -->
+      
+            </section>
+      
+            <!--  *******   Left Section (Column) Ends   *******  -->
+      
+            <!--  *******   Right Section (Column) Starts   *******  -->
+      
+            <section class="col right">
+              
+              <!--  *******   Form Starts   *******  -->
+      
+              <form class="messageForm">
+                
+                <div class="inputGroup halfWidth">
+                  <input type="text" name="" required="required">
+                  <label>Your Name</label>
+                </div>
+      
+                <div class="inputGroup halfWidth">
+                  <input type="email" name="" required="required">
+                  <label>Email</label>
+                </div>
+      
+                <div class="inputGroup fullWidth">
+                  <input type="text" name="" required="required">
+                  <label>Subject</label>
+                </div>
+      
+                <div class="inputGroup fullWidth">
+                  <textarea required="required"></textarea>
+                  <label>Say Something</label>
+                </div>
+      
+                <div class="inputGroup fullWidth">
+                  <button>გაგზავნა</button>
+                </div>
+      
+              </form>
+      
+              <!--  *******   Form Ends   *******  -->
+            </section>
+      
+            <!--  *******   Right Section (Column) Ends   *******  -->
+      
+          </main>
+        </div>
+      
+
+      </li>
     </ul>
 
     <script src="nav.js">
@@ -315,4 +430,3 @@
     </script>
   </body>
 </html>
-
