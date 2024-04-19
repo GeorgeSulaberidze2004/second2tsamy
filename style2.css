@@ -1151,7 +1151,7 @@ h1.lowweight {
     display: flex;
     top: 50px;
     color: #888;
-    font-size: 17px;
+    font-size: 14px;
   }
   section.left .contactTitle h2 {
     position: relative;
@@ -1162,13 +1162,13 @@ h1.lowweight {
   }
   section.left .contactTitle h2 {
     position: relative;
-    font-size: 20px;
+    font-size: 15px;
     top: 15px;
     color: #ddd;
     display: inline-block;
     margin-bottom: 35px;
     font-family: 'BPG Nino Mtavruli';
-  }
+}
   section.left .contactTitle p {
     font-size: 12px;
     color: #ccc;
@@ -1199,7 +1199,7 @@ h1.lowweight {
   }
   .messageForm textarea {
     resize: none;
-    height: 190px;
+    height: 130px;
     display: block;
   }
   section.left .socialMedia {
