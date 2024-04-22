@@ -6,7 +6,16 @@
   src: url(/assets/fonts/Poppins-Light.ttf) format("truetype");
   
 }
-
+@font-face{font-family:'BPG Nino Mtavruli';src:url(assets/fonts/bpg-nino-mtavruli-webfont.eot);src:url(assets/fonts/bpg-nino-mtavruli-webfont.eot?#iefix) format('embedded-opentype'),url(assets/fonts/bpg-nino-mtavruli-webfont.woff2) format('woff2'),url(assets/fonts/bpg-nino-mtavruli-webfont.woff) format('woff'),url(assets/fonts/bpg-nino-mtavruli-webfont.ttf) format('truetype'),url(assets/fonts/bpg-nino-mtavruli-webfont.svg#bpg_nino_mtavruliregular) format('svg')}
+@font-face {
+  font-family: 'BPG Nino Mtavruli Bold';
+  src: url('assets/fonts/bpg-nino-mtavruli-bold-webfont.eot'); /* IE9 Compat Modes */
+  src: url('assets/fonts/bpg-nino-mtavruli-bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('assets/fonts/bpg-nino-mtavruli-bold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('assets/fonts/bpg-nino-mtavruli-bold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('assets/fonts/bpg-nino-mtavruli-bold-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('assets/fonts/bpg-nino-mtavruli-bold-webfont.svg#bpg_nino_mtavrulibold') format('svg'); /* Legacy iOS */
+}
 
 @font-face {
   font-family: 'Oswald';
@@ -92,11 +101,76 @@ html {
   cursor: pointer;
 }
 
+
+
 .nav-container .icons i {
   border-radius: 50%;
   padding: 3px;
   transition: 0.5s;
 }
+
+div.about-text {
+  width: 950px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: flex-start;
+  padding-top: 20%;
+  color: #8f8f8f;
+}
+.aboutmain{
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+.about-text h1 {
+  color: #ffffff5c;
+  font-size: 70px;
+  font-family: Oswald;
+  text-transform: capitalize;
+}
+.about-text p{
+  text-align: justify;
+}
+.about-text h5{
+  color: #ffffff;
+  font-size: 25px;
+  text-transform: capitalize;
+  font-family: 'Oswald';
+  margin-bottom: 25px;
+  font-weight: 200;
+  letter-spacing: 2px;
+
+
+}
+span{
+  font-family: "BPG Nino Mtavruli", sans-serif;
+}
+.aboutbutton {
+  background-color: #ffffffb3;
+  color: #242424;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 12px 30px;
+  border-radius: 30px;
+  display: flow;
+  width: 150px;
+  margin: 4% 42%;
+}
+.aboutbutton:hover{
+  background: transparent;
+  border: 2px solid;
+  cursor: pointer;
+  color: #ffffffc3;
+  border-color: #ffffffbd;
+}
+
 #contact1id{
   width: 100%;
 	min-height: 100vh;
@@ -111,9 +185,6 @@ html {
 	justify-content: center;
 	align-items: center;
 	padding: 30px 8%;
-  background-image: url(images/image00001.jpeg);
-  background-position-x: center;
-  background-position-y: center;
 }
 .contact1 .row{
 	display: flex;
@@ -336,7 +407,7 @@ textarea::-webkit-scrollbar-thumb{
 	position: absolute;
 	left: 50%;
 	transform: translate(-50%);
-	bottom: 20px;
+	bottom: 10px;
 	cursor: pointer;
 }
 
@@ -351,8 +422,8 @@ textarea::-webkit-scrollbar-thumb{
 }
 
 /* javascript */
-.active, .dot:hover{
-	border-color: #282828ad; /* blue */
+.active .dot:hover{
+	border-color: #1a1919ad; /* blue */
 }
 /* /javascript */
 
@@ -470,7 +541,7 @@ textarea::-webkit-scrollbar-thumb{
 .page-info h1,
 .page-info h3 {
   font-weight: 500;
-  color: #ffffff80;
+  color: #ffffff36;
   font-family: 'Oswald';
 }
 
@@ -536,7 +607,9 @@ button.lanbut {
   font-size: 12px;
   color: #fff;
 }
-
+.page-footer a {
+  text-decoration: underline;
+}
 .page-footer .buttons.demo-drive button {
   background-color: transparent;
   color: #fff;
@@ -683,14 +756,32 @@ background-color: #ffffffc6 ;
 /* Start Media Query */
 
 @media(max-width: 799px) {
+
+  .about-text h1{
+    font-size: 70px;
+  }
+  .about-text h5{
+    font-size: 30px;
+  }
+  .about-text p{
+    text-align: justify;
+    font-size: 14px;
+  }
+  .aboutbutton {
+    
+    margin: 5% 38%;
+  }
+  div.about-text {
+    width: 600px;
+    padding-top: 58%;
+  }  
+
    button.lanbut{
 	   display:none
    }
 
-	.active, .dot:hover {
-    border-color: #4c4c4cad;
-}
 
+   
 	
   .omnichannel__overlay, .header__overlay {
     -webkit-backdrop-filter: blur(25px);
@@ -984,6 +1075,25 @@ top: 10px;
 
 @media (max-width: 477px) {
 
+  .about-text h1{
+    font-size: 40px;
+  }
+  .about-text h5{
+    font-size: 20px;
+  }
+  .about-text p{
+    text-align: justify;
+    font-size: 11px;
+  }
+  .aboutbutton {
+    
+    margin: 5% 29%;
+  }
+  div.about-text {
+    width: 350px;
+    padding-top: 90%;
+  }  
+
 	.languagebox {
   
   margin-top: 5px;
@@ -1060,33 +1170,31 @@ section.left .socialMedia {
   margin: 5px 0px 5px;
 }
 .row section.right .messageForm {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding-top: 1px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 10px;
 }
 .iconGroup .details span {
-    display: flex;
-    top: 50px;
-    color: #888;
-    font-size: 13px;
-    text-decoration: none;
+  display: flex;
+  top: 50px;
+  color: #888;
+  font-size: 17px;
 }
 section.left .contactTitle h2 {
-    position: relative;
-    font-size: 14px;
-    top: 15px;
-    color: #ddd;
-    display: inline-block;
-    margin-bottom: 35px;
+  position: relative;
+  font-size: 20px;
+  color: #ddd;
+  display: inline-block;
+  margin-bottom: 35px;
 }
 section.left .contactTitle h2 {
-    position: relative;
-    font-size: 16px;
-    top: 15px;
-    color: #ddd;
-    display: inline-block;
-    margin-bottom: 35px;
+  position: relative;
+  font-size: 20px;
+  top: 15px;
+  color: #ddd;
+  display: inline-block;
+  margin-bottom: 35px;
 }
 section.left .contactTitle p {
   font-size: 12px;
@@ -1244,6 +1352,24 @@ section.left .socialMedia {
     color: black;
 }
 
+.about-text h1{
+  font-size: 35px;
+}
+.about-text h5{
+  font-size: 16px;
+}
+.about-text p{
+  text-align: justify;
+  font-size: 10px;
+}
+.aboutbutton {
+  
+  margin: 5% 29%;
+}
+div.about-text {
+  width: 350px;
+  padding-top: 58%;
+}  
 
   .logo{
     width: 90px;
@@ -1299,7 +1425,6 @@ section.left .socialMedia {
   top: 50px;
   color: #888;
   font-size: 15px;
-  text-decoration: none;
 }
 .iconGroup .icon {
   width: 25px;
@@ -1437,8 +1562,21 @@ font-size: 5px;
   right: 0;
 }
 }
+@media(max-width: 360px){
+  div.about-text {
+    width: 300px;
+    padding-top: 75%;
+}
+}
+@media(max-width: 350px){
+  div.about-text {
+    width: 300px;
+    padding-top: 110%;
+}
 
+}
 @media(max-width: 320px){
+  
   #closeNav {
     color: black;
 }
