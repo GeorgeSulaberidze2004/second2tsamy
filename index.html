@@ -90,7 +90,7 @@
         </div>
         <div id="model-y-footer" class="page-footer">
           <div class="buttons">
-            <button>Order Now</button>
+            <button class="show-popup" >Order Now</button>
             <button>See Details</button>
           </div>
           <p>
@@ -98,7 +98,14 @@
             <a onclick="window.location.href='//www.facebook.com/profile.php?id=61557992736442'">Go to the link</a>
           </p>
         </div>
-
+        <div class="popup-container">
+          <div class="popup-box">
+              <h1>Welcome!</h1>
+              <p>To purchase products, please contact us at the number indicated in the contacts, or write to us on our social page. thanks for your attention</p>
+              <button class="close-btn">CLOSE</button>
+          </div>
+          <script src="script.js"></script>
+        </div>
         
       </li>
       
@@ -112,7 +119,7 @@
         
         <div class="page-footer">
           <div class="buttons inverted">
-            <button type="submit" class="btn">Order Now</button>
+            <button class="show-popup" >Order Now</button>
             <button>See Details</button>
           </div>
           
@@ -121,7 +128,14 @@
             <a onclick="window.location.href='//www.facebook.com/profile.php?id=61557992736442'">Go to the link</a>
           </p>
         </div>
-
+        <div class="popup-container">
+          <div class="popup-box">
+              <h1>Welcome!</h1>
+              <p>To purchase products, please contact us at the number indicated in the contacts, or write to us on our social page. thanks for your attention</p>
+              <button class="close-btn">CLOSE</button>
+          </div>
+          <script src="script.js"></script>
+        </div>
       </li>
       
 
@@ -129,11 +143,11 @@
         <img src="images/image00016.jpeg" alt="Model 3" />
         <div class="page-info">
           <h1>Sunstop</h1>
-          <p>Lease starting at $299</p>
+          <p>Titanium</p>
         </div>
         <div class="page-footer">
           <div class="buttons inverted">
-            <button>Order Now</button>
+            <button class="show-popup"  >Order Now</button>
             <button  id="load-more" >See Details</button>
           </div>
           <p>
@@ -141,24 +155,15 @@
             <a onclick="window.location.href='//www.facebook.com/profile.php?id=61557992736442'">Go to the link</a>
           </p>
         </div>
-        <script>
-
-          let loadMoreBtn = document.querySelector('#load-more');
-          
-          
-          loadMoreBtn.onclick = () =>{
-             let boxes = [...document.querySelectorAll('.details-section .myslide fade ')];
-             for (var i = currentItem; i < currentItem + 3; i++){
-                boxes[i].style.display = 'inline-block';
-             }
-             currentItem += 3;
-          
-             if(currentItem >= boxes.length){
-                loadMoreBtn.style.display = 'none';
-             }
-          }
-          
-          </script>
+        <div class="popup-container">
+          <div class="popup-box">
+              <h1>Welcome!</h1>
+              <p>To purchase products, please contact us at the number indicated in the contacts, or write to us on our social page. thanks for your attention</p>
+              <button class="close-btn">CLOSE</button>
+          </div>
+          <script src="script.js"></script>
+        </div>
+        
       </li>
       
       <li id="det1" class="details-section">
@@ -242,7 +247,7 @@
         </div>
           <div class="page-footer">
           <div class="buttons inverted">
-            <button>Order Now</button>
+            <button class="show-popup"  >Order Now</button>
             <button  id="load-more" >See Details</button>
           </div>
         </div>
@@ -263,7 +268,14 @@
           <span class="dot" onclick="currentSlide(9)"></span>
           
         </div>
-       
+        <div class="popup-container">
+          <div class="popup-box">
+              <h1>Welcome!</h1>
+              <p>To purchase products, please contact us at the number indicated in the contacts, or write to us on our social page. thanks for your attention</p>
+              <button class="close-btn">CLOSE</button>
+          </div>
+          <script src="script.js"></script>
+        </div>
       
       </li>
 
@@ -276,13 +288,21 @@
         </div>
         <div class="page-footer">
           <div class="buttons inverted">
-            <button>Order Now</button>
+            <button class="show-popup"  >Order Now</button>
             <button>See Details</button>
           </div>
           <p>
             *For additional information, write to us on our social network.<br />
             <a onclick="window.location.href='//www.facebook.com/profile.php?id=61557992736442'">Go to the link</a>
           </p>
+        </div>
+        <div class="popup-container">
+          <div class="popup-box">
+              <h1>Welcome!</h1>
+              <p>To purchase products, please contact us at the number indicated in the contacts, or write to us on our social page. thanks for your attention</p>
+              <button class="close-btn">CLOSE</button>
+          </div>
+          <script src="script.js"></script>
         </div>
       </li>
       
@@ -295,13 +315,21 @@
         </div>
         <div class="page-footer">
           <div class="buttons inverted">
-            <button>Order Now</button>
+            <button class="show-popup"  >Order Now</button>
             <button>See Details</button>
           </div>
           <p>
             *For additional information, write to us on our social network.<br />
             <a onclick="window.location.href='//www.facebook.com/profile.php?id=61557992736442'">Go to the link</a>
           </p>
+        </div>
+        <div class="popup-container">
+          <div class="popup-box">
+              <h1>Welcome!</h1>
+              <p>To purchase products, please contact us at the number indicated in the contacts, or write to us on our social page. thanks for your attention</p>
+              <button class="close-btn">CLOSE</button>
+          </div>
+          <script src="script.js"></script>
         </div>
       </li>
       
@@ -315,13 +343,21 @@
         </div>
         <div class="page-footer">
           <div class="buttons inverted">
-            <button>Order Now</button>
+            <button class="show-popup"  >Order Now</button>
             <button>See Details</button>
           </div>
           <p>
             *For additional information, write to us on our social network.<br />
             <a onclick="window.location.href='//www.facebook.com/profile.php?id=61557992736442'">Go to the link</a>
           </p>
+        </div>
+        <div class="popup-container">
+          <div class="popup-box">
+              <h1>Welcome!</h1>
+              <p>To purchase products, please contact us at the number indicated in the contacts, or write to us on our social page. thanks for your attention</p>
+              <button class="close-btn">CLOSE</button>
+          </div>
+          <script src="script.js"></script>
         </div>
       </li>
       
