@@ -1218,7 +1218,7 @@ h1.lowweight {
   .txt h1 {
     font-size: 25px;
     margin-bottom: 10px;
-    font-family: fantasy;
+    font-family: sans-serif;
   }
   .txt p {
     font-weight: lighter;
