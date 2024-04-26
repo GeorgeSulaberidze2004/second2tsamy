@@ -110,14 +110,14 @@ html {
 }
 
 div.about-text {
-  width: 950px;
+  width: 90%;
   position: absolute;
   display: flex;
   flex-direction: column;
   height: 100vh;
   justify-content: flex-start;
-  padding-top: 20%;
   color: #8f8f8f;
+  top: 15%;
 }
 .aboutmain{
   width: 1130px;
@@ -178,13 +178,18 @@ span{
 	background-color: #2e2e2e;
 	color: white;
 }
-.contact1{
-  width: 100%;
-	min-height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 30px 8%;
+.contact1 {
+    width: 100%;
+    top: 0%;
+    position: absolute;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 8%;
+    background-image: url(images/image00001.jpeg);
+    background-position-x: center;
+    background-position-y: center;
 }
 .contact1 .row{
 	display: flex;
@@ -411,18 +416,17 @@ textarea::-webkit-scrollbar-thumb{
 	cursor: pointer;
 }
 
-.dot{
-	display: inline-block;
-	width: 15px;
-	height: 15px;
-	border: 3px solid #fff;
-	border-radius: 50%;
-	margin: 0 10px;
-	cursor: pointer;
+.dot {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border: 2px solid #ffffffbf;
+  border-radius: 50%;
+  margin: 0 10px;
+  cursor: pointer;
 }
-
 /* javascript */
-.active .dot:hover{
+.active, .dot:hover{
 	border-color: #1a1919ad; /* blue */
 }
 /* /javascript */
@@ -589,6 +593,7 @@ button.lanbut {
 
 .page-footer .buttons button:last-child {
   background-color: rgba(255, 255, 255, 0.75);
+  color: #333;
   
 }
 
@@ -757,6 +762,10 @@ background-color: #ffffffc6 ;
 
 @media(max-width: 799px) {
 
+
+  .active, .dot:hover {
+    border-color: #4c4c4cad;
+}
   .about-text h1{
     font-size: 70px;
   }
@@ -772,9 +781,9 @@ background-color: #ffffffc6 ;
     margin: 5% 38%;
   }
   div.about-text {
-    width: 600px;
-    padding-top: 58%;
-  }  
+    width: 80%;
+    top: 15%;
+}
 
    button.lanbut{
 	   display:none
@@ -911,6 +920,17 @@ background-color: #ffffffc6 ;
 }
 .active, .dot:hover {
   border-color: #4c4c4cad;
+}
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 50px;
+  padding: 15px;
+  cursor: pointer;
+  color: #ffffff85;
+  transition: 0.1s;
+  user-select: none;
 }
 .sidebarpages{
   
@@ -1069,11 +1089,32 @@ top: 10px;
   left: 15%;
   line-height: 35px;
 }
-
-
+.dotsbox {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 5px;
+  cursor: pointer;
+}
+.active, .dot:hover {
+    border-color: #4c4c4cad;
+}
 }
 
 @media (max-width: 477px) {
+
+  .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #ffffffbf;
+    border-radius: 50%;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.active, .dot:hover {
+  border-color: #4c4c4cad;
+}
 
   .about-text h1{
     font-size: 40px;
@@ -1090,8 +1131,8 @@ top: 10px;
     margin: 5% 29%;
   }
   div.about-text {
-    width: 350px;
-    padding-top: 80%;
+    width: 90%;
+    
   }  
 
 	.languagebox {
@@ -1178,6 +1219,7 @@ section.left .socialMedia {
 .iconGroup .details span {
   display: flex;
   top: 50px;
+  text-decoration: none;
   color: #888;
   font-size: 17px;
 }
@@ -1271,25 +1313,17 @@ section.left .socialMedia {
 }
 }
 .page-footer .buttons button {
-  font-size: 13px;
-  padding: 7px 53px;
-  
+  font-size: 12px;
+  padding: 5px 56px;
 }
+
 .page-footer .buttons {
   margin-bottom: 25px;
   
   gap: 5px;
   
 }
-.dot {
-  display: inline-block;
-  width: 9px;
-  height: 9px;
-  border: 2px solid #ffffffbf;
-  border-radius: 50%;
-  margin: 0 4px;
-  cursor: pointer;
-}
+
 .nav-container .icons{
     text-align: right;
     gap: 10px;
@@ -1305,13 +1339,7 @@ section.left .socialMedia {
   position: relative;
   padding: 15px 1px;
 }
-.dotsbox {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  bottom: 10px;
-  cursor: pointer;
-}
+
 .sidebarpages2{
   font-size: 17px;
   display: block;
@@ -1367,8 +1395,8 @@ section.left .socialMedia {
   margin: 5% 29%;
 }
 div.about-text {
-  width: 350px;
-  padding-top: 58%;
+  width: 90%;
+  
 }  
 
   .logo{
@@ -1382,7 +1410,7 @@ div.about-text {
     font-size: 19px;
 }
 .page-footer .buttons button:last-child {
-  background-color: rgb(255 255 255 / 0%);
+  background-color: rgba(255, 255, 255, 0.75);
   padding: 6px 60px;
 }
 .page-footer .buttons button {
@@ -1511,11 +1539,11 @@ section.left .contactTitle h2 {
 }
 .dot {
   display: inline-block;
-  width: 7px;
-  height: 7px;
+  width: 10px;
+  height: 10px;
   border: 2px solid #ffffffbf;
   border-radius: 50%;
-  margin: 0 1px;
+  margin: 0 3px;
   cursor: pointer;
 }
 .prev, .next {
@@ -1525,7 +1553,7 @@ section.left .contactTitle h2 {
   font-size: 40px;
   padding: 15px;
   cursor: pointer;
-  color: #ffffff30;
+  color: #ffffff63;
   transition: 0.1s;
   user-select: none;
 }
@@ -1564,16 +1592,28 @@ font-size: 5px;
 }
 @media(max-width: 360px){
   div.about-text {
-    width: 300px;
-    padding-top: 75%;
+    width: 85%;
+   
 }
 }
 @media(max-width: 350px){
   div.about-text {
-    width: 300px;
-    padding-top: 110%;
+    width: 85%;
+    
 }
-
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #ffffffbf;
+  border-radius: 50%;
+  margin: 0 2px;
+  cursor: pointer;
+}
+.page-footer .buttons button {
+  font-size: 9px;
+  padding: 6px 57px;
+}
 }
 @media(max-width: 320px){
   
