@@ -137,7 +137,7 @@ div.about-text {
   color: #ffffff;
   font-size: 25px;
   text-transform: capitalize;
-  font-family: 'Oswald';
+  font-family: fantasy;
   margin-bottom: 25px;
   font-weight: 200;
   letter-spacing: 2px;
@@ -881,7 +881,7 @@ h1.lowweight {
   .txt h1{
     font-size: 25px;
     margin-bottom: 10px;
-    font-family: Oswald;
+    font-family: fantasy;
   }
   .txt p {
     font-weight: lighter;
@@ -1218,7 +1218,7 @@ h1.lowweight {
   .txt h1 {
     font-size: 25px;
     margin-bottom: 10px;
-    font-family: 'Oswald';
+    font-family: fantasy;
   }
   .txt p {
     font-weight: lighter;
