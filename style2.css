@@ -42,11 +42,6 @@
   box-sizing: border-box;
 }
 
-li, ul, p, a, span, label, h1, h2, h3, h4, h5 {
-  font-family:'Poppins', 'Oswald', '-apple-system', sans-serif, 'nino_mtavruli';
-  margin: 0;
-  padding: 0;
-}
 
 html {
   overflow-x: hidden;
@@ -102,6 +97,75 @@ html {
   cursor: pointer;
   filter: brightness(0) invert(1);
 }
+
+.show-popup {
+  padding: 18px 40px;
+  background: #6e78ff;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 46%);
+  font-size: 18px;
+  color: #f2f2f2;
+  font-weight: 500;
+}
+.popup-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, .3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+}
+.popup-container.active {
+  opacity: 1;
+  pointer-events: auto;
+  transition: .6s ease;
+}
+.popup-container .popup-box {
+  width: 500px;
+  background: #f2f2f2;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  padding: 30px;
+  transform: scale(0);
+}
+.popup-container.active .popup-box {
+  transform: scale(1);
+  transition: .4s ease;
+  transition-delay: .25s;
+}
+.popup-box h1 {
+  color: #333;
+  line-height: 1;
+}
+.popup-box p {
+  color: #333;
+  margin: 12px 0 20px;
+}
+.popup-box .close-btn {
+  width: 100%;
+  height: 45px;
+  background: #0000009e;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 18px;
+  color: #f2f2f2;
+  font-weight: 500;
+}
+
+
+
+
+
+
 div.about-text {
   width: 90%;
   position: absolute;
@@ -137,7 +201,7 @@ div.about-text {
   color: #ffffff;
   font-size: 25px;
   text-transform: capitalize;
-  font-family: fantasy;
+  font-family: 'Oswald';
   margin-bottom: 25px;
   font-weight: 200;
   letter-spacing: 2px;
@@ -881,7 +945,7 @@ h1.lowweight {
   .txt h1{
     font-size: 25px;
     margin-bottom: 10px;
-    font-family: fantasy;
+    font-family: Oswald;
   }
   .txt p {
     font-weight: lighter;
@@ -1146,7 +1210,14 @@ h1.lowweight {
   left: 15%;
   line-height: 35px;
 }
-
+.popup-container .popup-box {
+  width: 90%;
+  background: #f2f2f2;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  padding: 30px;
+  transform: scale(0);
+}
 
 }
 
@@ -1166,7 +1237,7 @@ h1.lowweight {
   }
   .about-text h5{
     font-size: 20px;
-    font-family: 'Poppins';
+    font-family: 'Oswald';
     font-weight: 200;
   }
   .about-text p{
@@ -1182,7 +1253,7 @@ h1.lowweight {
     top: 15%;
   }  
 
-
+  
   .languagebox i {
     font-family: "Poppins", sans-serif, 'nino_mtavruli', "nino_mtavruli";
     position: absolute;
@@ -1218,7 +1289,7 @@ h1.lowweight {
   .txt h1 {
     font-size: 25px;
     margin-bottom: 10px;
-    font-family: sans-serif;
+    font-family: 'Oswald';
   }
   .txt p {
     font-weight: lighter;
@@ -1470,7 +1541,7 @@ div.about-text {
 }
 .page-footer .buttons button {
   font-size: 8px;
-  padding: 6px 49px;
+  padding: 6px 54px;
   
 }
 
