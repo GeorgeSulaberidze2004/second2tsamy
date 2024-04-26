@@ -25,6 +25,11 @@
   src: url(/assets/fonts/Oswald-Bold.ttf) format("truetype");
 
 }
+@font-face {
+  font-family: 'Oswald';
+  src: url(/assets/fonts/Oswald-Medium.ttf) format("truetype");
+
+}
 
 
 
@@ -38,7 +43,7 @@
 }
 
 li, ul, p, a, span, label, h1, h2, h3, h4, h5 {
-  font-family:'Poppins', '-apple-system', sans-serif, 'nino_mtavruli';
+  font-family:'Poppins', 'Oswald', '-apple-system', sans-serif, 'nino_mtavruli';
   margin: 0;
   padding: 0;
 }
@@ -98,13 +103,13 @@ html {
   filter: brightness(0) invert(1);
 }
 div.about-text {
-  width: 950px;
+  width: 90%;
   position: absolute;
   display: flex;
   flex-direction: column;
   height: 100vh;
   justify-content: flex-start;
-  padding-top: 20%;
+  top: 20%;
   color: #8f8f8f;
 }
 .aboutmain{
@@ -126,6 +131,7 @@ div.about-text {
 .about-text p{
   text-align: justify;
   font-family: "BPG Nino Mtavruli", sans-serif;
+  font-size: 100%;
 }
 .about-text h5{
   color: #ffffff;
@@ -803,7 +809,7 @@ h1.lowweight {
   }
   .about-text p{
     text-align: justify;
-    font-size: 14px;
+    font-size: 18px;
   }
   .aboutbutton {
     
@@ -811,7 +817,7 @@ h1.lowweight {
   }
   div.about-text {
     width: 600px;
-    padding-top: 58%;
+    top: 20%;
   }  
   button.lanbut{
     display: none;
@@ -1160,10 +1166,12 @@ h1.lowweight {
   }
   .about-text h5{
     font-size: 20px;
+    font-family: 'Oswald';
+    font-weight: 200;
   }
   .about-text p{
     text-align: justify;
-    font-size: 11px;
+    font-size: 13px;
   }
   .aboutbutton {
     
@@ -1171,7 +1179,7 @@ h1.lowweight {
   }
   div.about-text {
     width: 350px;
-    padding-top: 90%;
+    top: 15%;
   }  
 
 
@@ -1210,7 +1218,7 @@ h1.lowweight {
   .txt h1 {
     font-size: 25px;
     margin-bottom: 10px;
-    font-family: Oswald;
+    font-family: 'Oswald';
   }
   .txt p {
     font-weight: lighter;
@@ -1254,6 +1262,7 @@ h1.lowweight {
   .iconGroup .details span {
     display: flex;
     top: 50px;
+    text-decoration: none;
     color: #888;
     font-size: 17px;
   }
@@ -1442,7 +1451,7 @@ h1.lowweight {
 }
 div.about-text {
   width: 350px;
-  padding-top: 58%;
+  top: 20%;
 }  
 
   .logo{
@@ -1457,11 +1466,11 @@ div.about-text {
 }
 .page-footer .buttons button:last-child {
   background-color: rgba(255, 255, 255, 0.75);
-  padding: 6px 60px;
+  
 }
 .page-footer .buttons button {
-  font-size: 9px;
-  padding: 6px 60px;
+  font-size: 8px;
+  padding: 6px 54px;
   
 }
 
@@ -1482,7 +1491,7 @@ div.about-text {
   font-size: 9px;
 }
 .page-footer p, .page-footer a {
-  font-size: 10px;
+  font-size: 8px;
   color: #fff;
 }
 .sidebarpages{
@@ -1639,13 +1648,16 @@ font-size: 5px;
 @media(max-width: 360px){
   div.about-text {
     width: 300px;
-    padding-top: 75%;
+    top: 20%;
 }
 }
 @media(max-width: 350px) {
   div.about-text {
-    width: 300px;
-    padding-top: 110%;
+    width: 90%;
+    top: 15%;
+}
+.about-text p{
+  font-size: 13px;
 }
 }
 
