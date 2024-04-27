@@ -101,6 +101,13 @@ html {
   cursor: pointer;
 }
 
+.icons2 {
+  color: #333;
+  font-size: 40px;
+  margin: 10px;
+}
+
+
 .show-popup {
   padding: 18px 40px;
   background: #6e78ff;
