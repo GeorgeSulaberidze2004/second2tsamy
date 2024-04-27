@@ -97,6 +97,11 @@ html {
   cursor: pointer;
   filter: brightness(0) invert(1);
 }
+.icons2 {
+  color: #333;
+  font-size: 40px;
+  margin: 10px;
+}
 
 .show-popup {
   padding: 18px 40px;
