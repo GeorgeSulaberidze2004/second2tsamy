@@ -65,6 +65,115 @@ document.getElementById("closeNav").addEventListener("click", function() {
 
 
 
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Function to scroll to a specific element
+  function scrollToElement(elementId) {
+    const element = document.querySelector(elementId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+
+  // Event listeners for navigation links
+  document.getElementById('prodLink').addEventListener('click', function() {
+    scrollToElement('#custom-slider');
+  });
+
+  document.getElementById('aboutLink').addEventListener('click', function() {
+    scrollToElement('#aboutus');
+  });
+
+  document.getElementById('contactLink').addEventListener('click', function() {
+    scrollToElement('#contact1id');
+  });
+
+  // Event listeners for sidebar links
+  document.getElementById('prodSidebarLink').addEventListener('click', function() {
+    scrollToElement('#custom-slider');
+  });
+
+  document.getElementById('aboutSidebarLink').addEventListener('click', function() {
+    scrollToElement('#aboutus');
+  });
+
+  document.getElementById('contactSidebarLink').addEventListener('click', function() {
+    scrollToElement('#contact1id');
+  });
+  document.getElementById('checkoutbtn').addEventListener('click', function() {
+    scrollToElement('#custom-slider');
+  });
+  document.getElementById('seedet1').addEventListener('click', function() {
+    scrollToElement('#custom-slider');
+  });
+  document.getElementById('seedet2').addEventListener('click', function() {
+    scrollToElement('#sunstop');
+  });
+  document.getElementById('seedet3').addEventListener('click', function() {
+    scrollToElement('#custom2-slider');
+  });
+  document.getElementById('seedet4').addEventListener('click', function() {
+    scrollToElement('#solflare');
+  });
+  document.getElementById('seedet5').addEventListener('click', function() {
+    scrollToElement('#custom3-slider');
+  });
+  document.getElementById('seedet6').addEventListener('click', function() {
+    scrollToElement('#rayframe');
+  });
+  document.getElementById('seedet7').addEventListener('click', function() {
+    scrollToElement('#custom4-slider');
+  });
+  document.getElementById('seedet8').addEventListener('click', function() {
+    scrollToElement('#eyebeam');
+  });
+  document.getElementById('seedet9').addEventListener('click', function() {
+    scrollToElement('#custom5-slider');
+  });
+  document.getElementById('seedet10').addEventListener('click', function() {
+    scrollToElement('#lastpics');
+  });
+  document.getElementById('brandinfo').addEventListener('click', function() {
+    scrollToElement('#aboutus');
+  });
+  document.getElementById('aboutcontct').addEventListener('click', function() {
+    scrollToElement('#contact1id');
+  });
+
+
+  // Event listener for language button
+  document.getElementById('languageButton').addEventListener('click', function() {
+    // Replace this with your language change logic
+    console.log('Language button clicked');
+  });
+
+  // Event listener for close navigation button
+  document.getElementById('closeNavButton').addEventListener('click', function() {
+    // Replace this with your close navigation logic
+    console.log('Close navigation button clicked');
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 initializeSlider('.custom-slide', '.custom-dot', '.custom-prev', '.custom-next');
 
 initializeSlider('.custom2-slide', '.custom2-dot', '.custom2-prev', '.custom2-next');
