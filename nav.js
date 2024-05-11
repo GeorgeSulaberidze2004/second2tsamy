@@ -147,17 +147,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 
-  // Event listener for language button
-  document.getElementById('languageButton').addEventListener('click', function() {
-    // Replace this with your language change logic
-    console.log('Language button clicked');
-  });
-
-  // Event listener for close navigation button
-  document.getElementById('closeNavButton').addEventListener('click', function() {
-    // Replace this with your close navigation logic
-    console.log('Close navigation button clicked');
-  });
+ 
 });
 
 
