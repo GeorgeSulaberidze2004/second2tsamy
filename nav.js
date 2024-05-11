@@ -65,54 +65,87 @@ document.getElementById("closeNav").addEventListener("click", function() {
 
 
 
+initializeSlider('.custom-slide', '.custom-dot', '.custom-prev', '.custom-next');
+
+initializeSlider('.custom2-slide', '.custom2-dot', '.custom2-prev', '.custom2-next');
+
+initializeSlider('.custom3-slide', '.custom3-dot', '.custom3-prev', '.custom3-next');
+
+initializeSlider('.custom4-slide', '.custom4-dot', '.custom4-prev', '.custom4-next');
+
+initializeSlider('.custom5-slide', '.custom5-dot', '.custom5-prev', '.custom5-next');
 
 
 
 
 
-const myslide = document.querySelectorAll('.myslide'),
-	  dot = document.querySelectorAll('.dot');
-let counter = 1;
-slidefun(counter);
+function initializeSlider(slideClass, dotClass, prevBtnClass, nextBtnClass) {
+  const slides = document.querySelectorAll(slideClass);
+  const dots = document.querySelectorAll(dotClass);
+  let counter = 1;
+  slidefun(counter);
 
-let timer = setInterval(autoSlide, 8000);
-function autoSlide() {
-	counter += 1;
-	slidefun(counter);
+  let timer = setInterval(autoSlide, 8000);
+
+  function autoSlide() {
+      counter += 1;
+      slidefun(counter);
+  }
+
+  function plusSlides(n) {
+      counter += n;
+      slidefun(counter);
+      resetTimer();
+  }
+
+  function currentSlide(n) {
+      counter = n;
+      slidefun(counter);
+      resetTimer();
+  }
+
+  function resetTimer() {
+      clearInterval(timer);
+      timer = setInterval(autoSlide, 8000);
+  }
+
+  function slidefun(n) {
+      let i;
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(' active', '');
+      }
+      if (n > slides.length) {
+          counter = 1;
+      }
+      if (n < 1) {
+          counter = slides.length;
+      }
+      slides[counter - 1].style.display = "block";
+      dots[counter - 1].className += " active";
+  }
+
+  // Event listeners for prev and next buttons
+  document.querySelector(prevBtnClass).addEventListener('click', () => {
+      plusSlides(-1);
+  });
+
+  document.querySelector(nextBtnClass).addEventListener('click', () => {
+      plusSlides(1);
+  });
+
+  // Event listeners for dots
+  dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+          currentSlide(index + 1);
+      });
+  });
 }
-function plusSlides(n) {
-	counter += n;
-	slidefun(counter);
-	resetTimer();
-}
-function currentSlide(n) {
-	counter = n;
-	slidefun(counter);
-	resetTimer();
-}
-function resetTimer() {
-	clearInterval(timer);
-	timer = setInterval(autoSlide, 8000);
-}
 
-function slidefun(n) {
-	
-	let i;
-	for(i = 0;i<myslide.length;i++){
-		myslide[i].style.display = "none";
-	}
-	for(i = 0;i<dot.length;i++) {
-		dot[i].className = dot[i].className.replace(' active', '');
-	}
-	if(n > myslide.length){
-	   counter = 1;
-	   }
-	if(n < 1){
-	   counter = myslide.length;
-	   }
-	myslide[counter - 1].style.display = "block";
-	dot[counter - 1].className += " active";
-    }
+// Call the function with your specific class names
+initializeSlider('.myslide', '.dot', '.prev', '.next');
 
 
 
