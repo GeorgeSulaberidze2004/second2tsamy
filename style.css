@@ -526,6 +526,17 @@ textarea::-webkit-scrollbar-thumb{
 	transition: 0.1s;
 	user-select: none;
 }
+.custom5-prev, .custom5-next{
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	font-size: 50px;
+	padding: 15px;
+	cursor: pointer;
+	color: #fff;
+	transition: 0.1s;
+	user-select: none;
+}
 .prev:hover, .next:hover{
 	color: #dedede; /* blue */
 }
@@ -539,6 +550,9 @@ textarea::-webkit-scrollbar-thumb{
 	color: #dedede; /* blue */
 }
 .custom4-prev:hover, .custom4-next:hover{
+	color: #dedede; /* blue */
+}
+.custom5-prev:hover, .custom5-next:hover{
 	color: #dedede; /* blue */
 }
 .next{
@@ -556,6 +570,9 @@ textarea::-webkit-scrollbar-thumb{
 .custom4-next{
 	right: 0;
 }
+.custom5-next{
+	right: 0;
+}
 .custom-prev{
   left: 0;
 }
@@ -566,6 +583,9 @@ textarea::-webkit-scrollbar-thumb{
   left: 0;
 }
 .custom4-prev{
+  left: 0;
+}
+.custom5-prev{
   left: 0;
 }
 .dotsbox{
@@ -621,6 +641,15 @@ textarea::-webkit-scrollbar-thumb{
   margin: 0 10px;
   cursor: pointer;
 }
+.custom5-dot {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border: 2px solid #ffffffbf;
+  border-radius: 50%;
+  margin: 0 10px;
+  cursor: pointer;
+}
 /* javascript */
 .active, .dot:hover{
 	border-color: #1a1919ad; /* blue */
@@ -635,6 +664,9 @@ textarea::-webkit-scrollbar-thumb{
 	border-color: #1a1919ad; /* blue */
 }
 .active, .custom4-dot:hover{
+	border-color: #1a1919ad; /* blue */
+}
+.active, .custom5-dot:hover{
 	border-color: #1a1919ad; /* blue */
 }
 /* /javascript */
