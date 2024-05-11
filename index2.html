@@ -25,11 +25,12 @@
       
       
       <ul class="gefont">
-        <li  onclick="window.location.href='#det1'" >პროდუქცია</li>
-        <li  onclick="window.location.href='#aboutus'">ჩვენს შესახებ</li>
-        <li  onclick="window.location.href='#contact1id'">კონტაქტი</li>
-        
+        <li id="prodLink">პროდუქცია</li>
+        <li id="aboutLink">ჩვენს შესახებ</li>
+        <li id="contactLink">კონტაქტი</li>
       </ul> 
+
+
       <div class="icons">
         <i class='bx bxl-facebook-circle' onclick="window.location.href='//www.facebook.com/profile.php?id=61557992736442'"></i>
         <i class='bx bxl-instagram' onclick="window.location.href='//www.instagram.com/tsamy.georgia?igsh=MWlyazl3aXdydXNjbQ%3D%3D&utm_source=qr'"></i>
@@ -46,21 +47,20 @@
     </div>
     </div>
    <aside class="sidebar">
-      <button  class="closenav"><i id="closeNav" class='bx bx-exit bx-rotate-180'></i></button>
-      <style> .sidebarpages2{font-weight: 500;} </style>
-      <a class="sidebarpages2" onclick="window.location.href='#det1'">პროდუქცია <img id="chevron2" src="images/ARROW.png"  alt=""> </a>
-      <a class="sidebarpages2" onclick="window.location.href='#aboutus'">ჩვენს შესახებ <img id="chevron2" src="images/ARROW.png"  alt=""> </a>
-      <a class="sidebarpages2" onclick="window.location.href='#contact1id'">კონტაქტი <img id="chevron2" src="images/ARROW.png"  alt=""></a>
-     
-      <div class="languagebox">
-        <i class='bx bx-globe'></i>
-        <select class="language" onchange="window.location.href=this.value;" >
-        <option class="en" value="">GE</option> 
-        <option class="en" value="index.html">EN</option>          
-        </select>
-         </div>
-    </aside>
-
+  <button id="closeNavButton" class="closenav"><i id="closeNav" class='bx bx-exit bx-rotate-180'></i></button>
+  <style> .sidebarpages2 { font-weight: 500; } </style>
+  <a id="prodSidebarLink" class="sidebarpages2">პროდუქცია <img id="chevron2" src="images/ARROW.png" alt=""> </a>
+  <a id="aboutSidebarLink" class="sidebarpages2">ჩვენს შესახებ <img id="chevron2" src="images/ARROW.png" alt=""> </a>
+  <a id="contactSidebarLink" class="sidebarpages2">კონტაქტი <img id="chevron2" src="images/ARROW.png" alt=""></a>
+ 
+  <div class="languagebox">
+    <i class='bx bx-globe'></i>
+    <select id="languageSelect" class="language">
+      <option class="en" value="">GE</option> 
+      <option class="en" value="index.html">EN</option>          
+    </select>
+  </div>
+</aside>
     
     
     <div class="overlay"></div>
@@ -75,7 +75,7 @@
                    <h1 class="lowweight" >გახდი <span></span></h1>
                    <h1 class="lowweight" >ყველასგან <span></span></h1>
                    <h1>განსხვავებული <span></span></h1>
-                   <a class="cta" onclick="window.location.href='#custom-slider'"  type="button1"  >შეამოწმე</a>
+                   <a class="cta" id="checkoutbtn"  type="button1"  >შეამოწმე</a>
                </div>
             </div>    
             
@@ -91,7 +91,7 @@
         <div id="model-y-footer" class="page-footer">
           <div class="buttons">
             <button class="show-popup" >შეუკვეთე ახლავე</button>
-            <button onclick="window.location.href='#custom-slider'" >დეტალების ნახვა</button>
+            <button id="seedet1">დეტალების ნახვა</button>
           </div>
           <p>
             *დამატებითი ინფორმაციისთვის დაგვიკავშირდით ჩვენს სოციალურ გვერდზე.
@@ -150,7 +150,7 @@
         <div class="page-footer">
         <div class="buttons inverted">
           <button class="show-popup"  >შეუკვეთე ახლავე</button>
-          <button  id="load-more" onclick="window.location.href='#sunstop'" >დამატებით ნახვა </button>
+          <button  id="seedet2" >დამატებით ნახვა </button>
         </div>
       </div>
         
@@ -183,7 +183,7 @@
       
        </li>
 
-      <li class="">
+      <li >
         <img id="sunstop" src="images/image00016.jpeg" alt="Model 3" />
         <div class="page-info">
           <h1>Sunstop</h1>
@@ -193,7 +193,7 @@
         <div class="page-footer">
           <div class="buttons inverted">
             <button class="show-popup" >შეუკვეთე ახლავე</button>
-            <button class="seedetailes1" onclick="window.location.href='#custom2-slider'" >დეტალების ნახვა</button>
+            <button class="seedetailes1" id="seedet3">დეტალების ნახვა</button>
           </div>
           <p>
             *დამატებითი ინფორმაციისთვის დაგვიკავშირდით ჩვენს სოციალურ გვერდზე.
@@ -249,7 +249,7 @@
         <div class="page-footer">
         <div class="buttons inverted">
           <button class="show-popup"  >შეუკვეთე ახლავე</button>
-          <button  id="load-more" onclick="window.location.href='#solflare'" >დამატებით ნახვა</button>
+          <button  id="seedet4" >დამატებით ნახვა</button>
         </div>
       </div>
         
@@ -291,7 +291,7 @@
         <div class="page-footer">
           <div class="buttons inverted">
             <button class="show-popup"  >შეუკვეთე ახლავე</button>
-            <button class="seedetailes1" onclick="window.location.href='#custom3-slider'" >დეტალების ნახვა</button>
+            <button id="seedet5" >დეტალების ნახვა</button>
           </div>
           <p>
             *დამატებითი ინფორმაციისთვის დაგვიკავშირდით ჩვენს სოციალურ გვერდზე.
@@ -346,7 +346,7 @@
         <div class="page-footer">
         <div class="buttons inverted">
           <button class="show-popup"  >შეუკვეთე ახლავე</button>
-          <button  id="load-more" onclick="window.location.href='#rayframe'" >დამატებით ნახვა </button>
+          <button  id="seedet6"  >დამატებით ნახვა </button>
         </div>
       </div>
         
@@ -390,7 +390,7 @@
         <div class="page-footer">
           <div class="buttons inverted">
             <button class="show-popup" >შეუკვეთე ახლავე</button>
-            <button onclick="window.location.href='#custom4-slider'"  >დეტალების ნახვა</button>
+            <button id="seedet7" >დეტალების ნახვა</button>
           </div>
           <p>
             *დამატებითი ინფორმაციისთვის დაგვიკავშირდით ჩვენს სოციალურ გვერდზე.
@@ -445,7 +445,7 @@
         <div class="page-footer">
         <div class="buttons inverted">
           <button class="show-popup"  >შეუკვეთე ახლავე</button>
-          <button  id="load-more" onclick="window.location.href='#eyebeam'" >დამატებით ნახვა </button>
+          <button  id="seedet8">დამატებით ნახვა </button>
         </div>
       </div>
         
@@ -489,7 +489,7 @@
         <div class="page-footer">
           <div class="buttons inverted">
             <button class="show-popup" >შეუკვეთე ახლავე</button>
-            <button onclick="window.location.href='#custom5-slider'" >დეტალების ნახვა</button>
+            <button id="seedet9">დეტალების ნახვა</button>
           </div>
           <p>
             *დამატებითი ინფორმაციისთვის დაგვიკავშირდით ჩვენს სოციალურ გვერდზე.
@@ -544,7 +544,7 @@
         <div class="page-footer">
         <div class="buttons inverted">
           <button class="show-popup"  >შეუკვეთე ახლავე</button>
-          <button  id="load-more" onclick="window.location.href='#lastpics'" >დამატებით ნახვა </button>
+          <button  id="seedet10"  >დამატებით ნახვა </button>
         </div>
       </div>
         
@@ -585,7 +585,7 @@
         </div>
         <div class="page-footer">
           <div class="buttons demo-drive">
-            <button onclick="window.location.href='#aboutus'"  >ბრენდის შესახებ</button>
+            <button id="brandinfo" >ბრენდის შესახებ</button>
           </div>
         </div>
       </li>
@@ -607,7 +607,7 @@
                     რატომ უნდა აირჩიოთ TSAMY? - პრემიუმ ხარისხის სათვალე დამზადებულია მსუბუქი ტიტანისგან. - უმაღლესი ხარისხის პოლარიზებული ლინზები,
                    - ქართული პროდუქცია და ოპერირება, ადგილობრივი ბრენდისა და ნაწარმის მხარდაჭერა. - სრულყოფილებისადმი ერთგულება
                      დიზაინში, კომფორტსა და გამძლეობაში. შემოგვიერთდით და გახდით ერთ-ერთი ქართული ბრენდის, TSAMY GEORGIA-ს მფლობელი.</p>
-              <button class="aboutbutton" onclick="window.location.href='#contact1id'" >დაგვიკავშირდით</button>
+              <button class="aboutbutton" id="aboutcontct" >დაგვიკავშირდით</button>
           </div>
         </div>
 
