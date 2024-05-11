@@ -23,9 +23,9 @@
       
       
       <ul>
-        <li onclick="window.location.href='#det1'">Shop</li>
-        <li onclick="window.location.href='#aboutus'">About</li>
-        <li onclick="window.location.href='#contact1id'" >Contact</li>
+        <li id="prodLink">Shop</li>
+        <li id="aboutLink">About</li>
+        <li id="contactLink">Contact</li>
         
       </ul>
       <div class="icons">
@@ -46,9 +46,9 @@
     <aside class="sidebar">
       <button  class="closenav"><i id="closeNav" class='bx bx-exit bx-rotate-180'></i></button>
       <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-      <a class="sidebarpages" onclick="window.location.href='#det1'">SHOP <img id="chevron" src="images/ARROW.png"  alt=""> </a>
-      <a class="sidebarpages" onclick="window.location.href='#aboutus'">ABOUT <img id="chevron" src="images/ARROW.png"  alt=""> </a>
-      <a class="sidebarpages" onclick="window.location.href='#contact1id'">CONTACT <img id="chevron" src="images/ARROW.png"  alt=""></a> 
+      <a id="prodSidebarLink" class="sidebarpages">SHOP <img id="chevron" src="images/ARROW.png"  alt=""> </a>
+      <a id="aboutSidebarLink" class="sidebarpages">ABOUT <img id="chevron" src="images/ARROW.png"  alt=""> </a>
+      <a id="contactSidebarLink" class="sidebarpages">CONTACT <img id="chevron" src="images/ARROW.png"  alt=""></a> 
 
       <div class="languagebox">
         <i class='bx bx-globe'></i>
@@ -73,7 +73,7 @@
                    <h1>Make yourself <span></span></h1>
                    <h1>stand out from <span></span></h1>
                    <h1>everyone else <span></span></h1>
-                   <a class="cta"  onclick="window.location.href='#custom-slider'"  type="button1"  >CHECK OUT </a>
+                   <a class="cta"  id="checkoutbtn" type="button1"  >CHECK OUT </a>
                </div>
             </div>    
 
@@ -91,7 +91,7 @@
         <div id="model-y-footer" class="page-footer">
           <div class="buttons">
             <button class="show-popup" >Order Now</button>
-            <button  onclick="window.location.href='#custom-slider'"  >See Details</button>
+            <button  id="seedet1"  >See Details</button>
           </div>
           <p>
             *For additional information, write to us on our social network.<br />
@@ -146,7 +146,7 @@
         <div class="page-footer">
         <div class="buttons inverted">
           <button class="show-popup"  >Order Now</button>
-          <button  id="load-more" onclick="window.location.href='#sunstop'" >See More</button>
+          <button  id="seedet2" >See More</button>
         </div>
       </div>
         
@@ -191,7 +191,7 @@
         <div class="page-footer">
           <div class="buttons inverted">
             <button class="show-popup" >Order Now</button>
-            <button onclick="window.location.href='#custom2-slider'" >See Details</button>
+            <button id="seedet3">See Details</button>
           </div>
           
           <p>
@@ -247,7 +247,7 @@
         <div class="page-footer">
         <div class="buttons inverted">
           <button class="show-popup"  >Order Now</button>
-          <button  id="load-more" onclick="window.location.href='#solflare'" >See More</button>
+          <button  id="seedet4" >See More</button>
         </div>
       </div>
         
@@ -291,7 +291,7 @@
         <div class="page-footer">
           <div class="buttons inverted">
             <button class="show-popup"  >Order Now</button>
-            <button  id="load-more"  onclick="window.location.href='#det1'"  >See Details</button>
+            <button  id="seedet5"  >See Details</button>
           </div>
           <p>
             *For additional information, write to us on our social network.<br />
@@ -313,124 +313,31 @@
         
       </li>
      
-      <li id="det1" class="details-section">
-        
-        <div class="myslide fade">
-          <div class="txt">
-            <h1>SolFlare</h1>
-            <p>Limited<br>Quantity<br>1 OF 100</p>
-          </div>
-          <img class="detailes1" src="images/image00006.jpeg" style="width: 100%; height: 100%;">
-        </div>
-    
-        <div class="myslide fade">
-          <div class="txt">
-            <h1>SolFlare</h1>
-            <p>Highest quality<br>Polorized glass<br>UV/400</p>
-          </div>
-          <img class="detailes1" src="images/image00013.jpeg" style="width: 100%; height: 100%;">
-        </div>
-    
-        <div class="myslide fade">
-          <div class="txt">
-            <h1>SolFlare</h1>
-            <p>The lighest<br>form of <br>Titanium</p>
-          </div>
-          <img class="detailes1" src="images/image00007.jpeg" style="width: 100%; height: 100%;">
-        </div>
-    
-        
-      
-
-          
-        </div>
-          <div class="page-footer">
-          <div class="buttons inverted">
-            <button class="show-popup"  >Order Now</button>
-            <button  id="load-more"  onclick="window.location.href='#first'" >See More</button>
-          </div>
-        </div>
-          
-        <!-- onclick js -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        
-        <div class="dotsbox" style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-          
-        </div>
-        <div class="popup-container">
-          <div class="popup-box">
-              <h1>Welcome!</h1>
-              <p>To purchase products, please contact us at the number indicated in the contacts, or write to us on our social page. thanks for your attention</p>
-              <div class="icons2">
-                <i class='bx bxl-facebook-circle' onclick="window.location.href='//www.facebook.com/profile.php?id=61557992736442'"></i>
-                <i class='bx bxl-instagram' onclick="window.location.href='//www.instagram.com/tsamy.georgia?igsh=MWlyazl3aXdydXNjbQ%3D%3D&utm_source=qr'"></i>
-              </div>
-              <button class="close-btn">CLOSE</button>
-          </div>
-          <script src="script.js"></script>
-        </div>
-      
-      </li>
-
-      <li>
-        <img id="first" src="images/image00020.jpeg" alt="Model S" />
-        <div class="page-info model-x">
-          <h1>Ray Frame</h1>
-          <h3>Timeless black design with a disruptive aesthetic.</h3>
-          <p>Titanium</p>
-        </div>
-        <div class="page-footer">
-          <div class="buttons inverted">
-            <button class="show-popup"  >Order Now</button>
-            <button onclick="window.location.href='#custom3-slider'" >See Details</button>
-          </div>
-          <p>
-            *For additional information, write to us on our social network.<br />
-            <a onclick="window.location.href='//www.facebook.com/profile.php?id=61557992736442'">Go to the link</a>
-          </p>
-        </div>
-        <div class="popup-container">
-          <div class="popup-box">
-              <h1>Welcome!</h1>
-              <p>To purchase products, please contact us at the number indicated in the contacts, or write to us on our social page. thanks for your attention</p>
-              <div class="icons2">
-                <i class='bx bxl-facebook-circle' onclick="window.location.href='//www.facebook.com/profile.php?id=61557992736442'"></i>
-                <i class='bx bxl-instagram' onclick="window.location.href='//www.instagram.com/tsamy.georgia?igsh=MWlyazl3aXdydXNjbQ%3D%3D&utm_source=qr'"></i>
-              </div>
-              <button class="close-btn">CLOSE</button>
-          </div>
-          <script src="script.js"></script>
-        </div>
-      </li>
       <li>
         <div id="custom3-slider" class="custom3-slider">
           <!-- fade css -->
           <div class="custom3-slide fade">
               <div class="txt">
-                  <h1>Ray Frame</h1>
+                  <h1>SolFlare</h1>
                   <p>Limited <br>Quantity<br>1 OF 100 </p>
               </div>
-              <img src="images/image00003.jpeg" style="width: 100%; height: 100%;">
+              <img src="images/image00006.jpeg" style="width: 100%; height: 100%;">
           </div>
       
           <div class="custom3-slide fade">
               <div class="txt">
-                  <h1>Ray Frame</h1>
+                  <h1>SolFlare</h1>
                   <p>Highest quality<br>Polorized glass<br>UV/400</p>
               </div>
-              <img src="images/image00011.jpeg" style="width: 100%; height: 100%;">
+              <img src="images/image00013.jpeg" style="width: 100%; height: 100%;">
           </div>
       
           <div class="custom3-slide fade">
               <div class="txt">
-                  <h1>Ray Frame</h1>
+                  <h1>SolFlare</h1>
                   <p>The lighest<br>form of <br>Titanium</p>
               </div>
-              <img src="images/image00014.jpeg" style="width: 100%; height: 100%;">
+              <img src="images/image00007.jpeg" style="width: 100%; height: 100%;">
           </div>
       
           
@@ -440,7 +347,7 @@
         <div class="page-footer">
         <div class="buttons inverted">
           <button class="show-popup"  >Order Now</button>
-          <button  id="load-more" onclick="window.location.href='#eyebeam'" >See More</button>
+          <button  id="seedet6" >See More</button>
         </div>
       </div>
         
@@ -472,18 +379,18 @@
       </div>
       
        </li>
-      
+
       <li>
-        <img id="eyebeam" src="images/image00008.jpeg" alt="Model X" />
+        <img id="rayframe" src="images/image00020.jpeg" alt="Model S" />
         <div class="page-info model-x">
-          <h1>Eyebeam</h1>
-          <h3>Beauty lies in simplicity and elegance </h3>
-          <p>Titanium </p>
+          <h1>Ray Frame</h1>
+          <h3>Timeless black design with a disruptive aesthetic.</h3>
+          <p>Titanium</p>
         </div>
         <div class="page-footer">
           <div class="buttons inverted">
             <button class="show-popup"  >Order Now</button>
-            <button onclick="window.location.href='#custom4-slider'"  >See Details</button>
+            <button id="seedet7" >See Details</button>
           </div>
           <p>
             *For additional information, write to us on our social network.<br />
@@ -503,32 +410,31 @@
           <script src="script.js"></script>
         </div>
       </li>
-      
       <li>
-        <div id="custom4-slider" class="custom3-slider">
+        <div id="custom4-slider" class="custom4-slider">
           <!-- fade css -->
           <div class="custom4-slide fade">
               <div class="txt">
-                  <h1>Eyebeam</h1>
+                  <h1>Ray Frame</h1>
                   <p>Limited <br>Quantity<br>1 OF 100 </p>
               </div>
-              <img src="images/image00005.jpeg" style="width: 100%; height: 100%;">
+              <img src="images/image00003.jpeg" style="width: 100%; height: 100%;">
           </div>
       
           <div class="custom4-slide fade">
               <div class="txt">
-                  <h1>Eyebeam</h1>
+                  <h1>Ray Frame</h1>
                   <p>Highest quality<br>Polorized glass<br>UV/400</p>
               </div>
-              <img src="images/image00012.jpeg" style="width: 100%; height: 100%;">
+              <img src="images/image00011.jpeg" style="width: 100%; height: 100%;">
           </div>
       
           <div class="custom4-slide fade">
               <div class="txt">
-                  <h1>Eyebeam</h1>
+                  <h1>Ray Frame</h1>
                   <p>The lighest<br>form of <br>Titanium</p>
               </div>
-              <img src="images/image00008.jpeg" style="width: 100%; height: 100%;">
+              <img src="images/image00014.jpeg" style="width: 100%; height: 100%;">
           </div>
       
           
@@ -538,7 +444,7 @@
         <div class="page-footer">
         <div class="buttons inverted">
           <button class="show-popup"  >Order Now</button>
-          <button  id="load-more" onclick="window.location.href='#lastpics'" >See More</button>
+          <button  id="seedet8">See More</button>
         </div>
       </div>
         
@@ -571,6 +477,104 @@
       
        </li>
       
+      <li>
+        <img id="eyebeam" src="images/image00008.jpeg" alt="Model X" />
+        <div class="page-info model-x">
+          <h1>Eyebeam</h1>
+          <h3>Beauty lies in simplicity and elegance </h3>
+          <p>Titanium </p>
+        </div>
+        <div class="page-footer">
+          <div class="buttons inverted">
+            <button class="show-popup"  >Order Now</button>
+            <button id="seedet9"  >See Details</button>
+          </div>
+          <p>
+            *For additional information, write to us on our social network.<br />
+            <a onclick="window.location.href='//www.facebook.com/profile.php?id=61557992736442'">Go to the link</a>
+          </p>
+        </div>
+        <div class="popup-container">
+          <div class="popup-box">
+              <h1>Welcome!</h1>
+              <p>To purchase products, please contact us at the number indicated in the contacts, or write to us on our social page. thanks for your attention</p>
+              <div class="icons2">
+                <i class='bx bxl-facebook-circle' onclick="window.location.href='//www.facebook.com/profile.php?id=61557992736442'"></i>
+                <i class='bx bxl-instagram' onclick="window.location.href='//www.instagram.com/tsamy.georgia?igsh=MWlyazl3aXdydXNjbQ%3D%3D&utm_source=qr'"></i>
+              </div>
+              <button class="close-btn">CLOSE</button>
+          </div>
+          <script src="script.js"></script>
+        </div>
+      </li>
+      
+      <li>
+        <div id="custom5-slider" class="custom5-slider">
+          <!-- fade css -->
+          <div class="custom5-slide fade">
+              <div class="txt">
+                  <h1>Eyebeam</h1>
+                  <p>Limited <br>Quantity<br>1 OF 100 </p>
+              </div>
+              <img src="images/image00005.jpeg" style="width: 100%; height: 100%;">
+          </div>
+      
+          <div class="custom5-slide fade">
+              <div class="txt">
+                  <h1>Eyebeam</h1>
+                  <p>Highest quality<br>Polorized glass<br>UV/400</p>
+              </div>
+              <img src="images/image00012.jpeg" style="width: 100%; height: 100%;">
+          </div>
+      
+          <div class="custom5-slide fade">
+              <div class="txt">
+                  <h1>Eyebeam</h1>
+                  <p>The lighest<br>form of <br>Titanium</p>
+              </div>
+              <img src="images/image00008.jpeg" style="width: 100%; height: 100%;">
+          </div>
+      
+          
+      
+          <!-- /fade css -->
+        </div>
+        <div class="page-footer">
+        <div class="buttons inverted">
+          <button class="show-popup"  >Order Now</button>
+          <button  id="seedet10" >See More</button>
+        </div>
+      </div>
+        
+      
+          <!-- onclick js -->
+          <a class="custom5-prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="custom5-next" onclick="plusSlides(1)">&#10095;</a>
+      
+          <div class="dotsbox" style="text-align:center">
+              <span class="custom5-dot" onclick="currentSlide(1)"></span>
+              <span class="custom5-dot" onclick="currentSlide(2)"></span>
+              <span class="custom5-dot" onclick="currentSlide(3)"></span>
+              
+          </div>
+          <div class="popup-container">
+            <div class="popup-box">
+                <h1>Welcome!</h1>
+                <p>To purchase products, please contact us at the number indicated in the contacts, or write to us on our social page. thanks for your attention</p>
+                <div class="icons2">
+                  <i class='bx bxl-facebook-circle' onclick="window.location.href='//www.facebook.com/profile.php?id=61557992736442'"></i>
+                  <i class='bx bxl-instagram' onclick="window.location.href='//www.instagram.com/tsamy.georgia?igsh=MWlyazl3aXdydXNjbQ%3D%3D&utm_source=qr'"></i>
+                </div>
+                <button class="close-btn">CLOSE</button>
+            </div>
+            <script src="script.js"></script>
+          </div>
+          <!-- /onclick js -->
+          
+      </div>
+      
+       </li>
+      
 
       <li>
         <img id="lastpics" src="images/image00015.jpeg" alt="Model 3" />
@@ -580,7 +584,7 @@
         </div>
         <div class="page-footer">
           <div class="buttons demo-drive">
-            <button  onclick="window.location.href='#aboutus'"   >About Brand</button>
+            <button  id="brandinfo"  >About Brand</button>
           </div>
         </div>
       </li>
@@ -600,7 +604,7 @@
                     Why Choose TSAMY? - Premium quality eyewear crafted from lightweight titanium. - Highest quality polarized lenses for superior
                      clarity and glare reduction. - Georgian-owned and operated, supporting local artisans and businesses. - Commitment to excellence 
                      in design, comfort, and durability. Join us in celebrating Georgian craftsmanship with TSAMY Eyewear.</p>
-              <button class="aboutbutton" onclick="window.location.href='#contact1id'" >Contact Us</button>
+              <button class="aboutbutton" id="aboutcontct" >Contact Us</button>
           </div>
         </div>
 
