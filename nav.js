@@ -74,12 +74,20 @@ document.getElementById("closeNav").addEventListener("click", function() {
 
 document.addEventListener('DOMContentLoaded', function() {
   // Function to scroll to a specific element
-  function scrollToElement(elementId) {
-    const element = document.querySelector(elementId);
-    if (element) {
+  // Function to scroll to a specific element
+function scrollToElement(elementId) {
+  const element = document.querySelector(elementId);
+  if (element) {
+    if ('scrollBehavior' in document.documentElement.style) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else {
+      // Fallback for browsers that do not support smooth scrolling
+      const offsetTop = element.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({ top: offsetTop, behavior: 'smooth' });
     }
   }
+}
+
 
   // Event listeners for navigation links
   document.getElementById('prodLink').addEventListener('click', function() {
